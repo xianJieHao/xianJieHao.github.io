@@ -1893,7 +1893,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #60ffc8;
+  background: #e39ffc;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2865,6 +2865,12 @@ body {
 }
 .header {
   background: rgba(0,0,0,0.7) none repeat scroll;
+}
+.posts-expand .page,
+.content .archive {
+  background-color: #fff;
+  opacity: 0.9;
+  padding: 2rem;
 }
 .posts-expand .post {
   margin-top: 50px;
