@@ -1849,7 +1849,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c2288b;
+  background: #04ff8c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2814,7 +2814,8 @@ hr {
 }
 body {
 /* background:url(https://source.unsplash.com/random/1600x900); */
-  background: url("http://s3.sinaimg.cn/orignal/006CagVjzy7mfR1BhHIe2&690");
+/*background:url(http://s3.sinaimg.cn/orignal/006CagVjzy7mfR1BhHIe2&690);*/
+  background: url("http://s5.sinaimg.cn/orignal/006CagVjzy7mnBL1k7G34&690");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -2823,7 +2824,7 @@ body {
 .header {
   background: rgba(0,0,0,0.7) none repeat scroll !important;
 }
-.content {
+.content-wrap {
   border-radius: 10px;
   background: rgba(255,255,255,0.8) none repeat scroll !important;
 }
