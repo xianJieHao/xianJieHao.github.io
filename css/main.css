@@ -1893,7 +1893,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #aaa747;
+  background: #ffb024;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2856,17 +2856,17 @@ hr {
     text-align: center;
   }
 }
-body {
-  background: url("http://s5.sinaimg.cn/orignal/006CagVjzy7mnBL1k7G34&690");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  background-size: cover;
-}
-.header {
-  background: rgba(0,0,0,0.7) none repeat scroll;
-}
 @media screen and (min-width: 700px) {
+  body {
+    background: url("http://s10.sinaimg.cn/orignal/006CagVjzy7mozZgBZL79&690");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .header {
+    background: rgba(0,0,0,0.7) none repeat scroll;
+  }
   .posts-expand .post {
     margin-top: 50px;
     background-color: #fff;
@@ -2880,16 +2880,16 @@ body {
   .post-button {
     text-align: center;
   }
-}
-.footer {
-  background: rgba(0,0,0,0.5) none repeat scroll;
-}
-.menu-item-active a {
-  background: none;
-}
-.site-title {
-  color: #f0e68c;
-}
-.header a {
-  color: #f0e68c;
+  .footer {
+    background: rgba(0,0,0,0.5) none repeat scroll;
+  }
+  .menu-item-active a {
+    background: none;
+  }
+  .site-title {
+    color: #f0e68c;
+  }
+  .header a {
+    color: #f0e68c;
+  }
 }
