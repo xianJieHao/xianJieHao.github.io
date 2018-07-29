@@ -1893,7 +1893,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e39ffc;
+  background: #cd1296;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2857,7 +2857,7 @@ hr {
   }
 }
 body {
-  background: url("http://s10.sinaimg.cn/orignal/006CagVjzy7mozZgBZL79&690");
+  background: url("http://s10.sinaimg.cn/orignal/006CagVjzy7mpeHFJCV09&690");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -2895,5 +2895,8 @@ body {
   color: #f0e68c;
 }
 .header a {
+  color: #f0e68c;
+}
+.footer {
   color: #f0e68c;
 }
