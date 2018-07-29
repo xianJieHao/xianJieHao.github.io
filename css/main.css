@@ -1893,7 +1893,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e301d9;
+  background: #308ebe;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2877,6 +2877,7 @@ body {
   background-color: #fff;
   padding: 2rem;
   opacity: 0.9;
+  border-radius: 4px;
 }
 .posts-expand .post-title,
 .posts-expand .post-meta {
@@ -2907,8 +2908,8 @@ body {
   color: #f0e68c !important;
 }
 .v .vbtn {
-  border: 1px solid #222;
-  background: #222;
+  border: 1px solid #222 !important;
+  background: #222 !important;
 }
 ::-moz-placeholder {
   color: #f0e68c;
