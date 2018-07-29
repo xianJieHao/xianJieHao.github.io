@@ -1893,7 +1893,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #34ffff;
+  background: #e301d9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2905,4 +2905,17 @@ body {
 }
 .v * {
   color: #f0e68c !important;
+}
+.v .vbtn {
+  border: 1px solid #222;
+  background: #222;
+}
+::-moz-placeholder {
+  color: #f0e68c;
+}
+::-webkit-input-placeholder {
+  color: #f0e68c;
+}
+:-ms-input-placeholder {
+  color: #f0e68c;
 }
