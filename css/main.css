@@ -1893,7 +1893,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #308ebe;
+  background: #f2b8c7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2909,6 +2909,9 @@ body {
 }
 .v .vbtn {
   border: 1px solid #222 !important;
+  background: #222 !important;
+}
+.v .vlist .vcard .vhead .vsys {
   background: #222 !important;
 }
 ::-moz-placeholder {
