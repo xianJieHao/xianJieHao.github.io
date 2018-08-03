@@ -120,27 +120,25 @@
 
 
 
-  <meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;写点什么呢？总想写点什么又无从下手！窗外黑云压城，暗无天日，狂风暴雨即将袭来！每次看到这副景象，内心泛起阵阵涟漪。">
-<meta name="keywords" content="me">
+  <meta name="description" content="Session其实分为客户端Session和服务器端Session。当用户首次与Web服务器建立连接的时候，服务器会给用户分发一个 SessionID作为标识。SessionID是一个由24个字符组成的随机字符串。用户每次提交页面，浏览器都会把这个SessionID包含在 HTTP头中提交给Web服务器，这样Web服务器就能区分当前请求页面的是哪一个客户端。这个SessionID就是保存在客户端的">
+<meta name="keywords" content="java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="路漫漫其修远兮 吾将上下而求索">
-<meta property="og:url" content="http://yoursite.com/2018/07/20/about-myself-java/index.html">
+<meta property="og:title" content="服务器端Session和客户端Session">
+<meta property="og:url" content="http://yoursite.com/2018/08/03/session-and-cookie/index.html">
 <meta property="og:site_name" content="Mr.冼 (ง •̀_•́)ง┻━┻">
-<meta property="og:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;写点什么呢？总想写点什么又无从下手！窗外黑云压城，暗无天日，狂风暴雨即将袭来！每次看到这副景象，内心泛起阵阵涟漪。">
+<meta property="og:description" content="Session其实分为客户端Session和服务器端Session。当用户首次与Web服务器建立连接的时候，服务器会给用户分发一个 SessionID作为标识。SessionID是一个由24个字符组成的随机字符串。用户每次提交页面，浏览器都会把这个SessionID包含在 HTTP头中提交给Web服务器，这样Web服务器就能区分当前请求页面的是哪一个客户端。这个SessionID就是保存在客户端的">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://s2.sinaimg.cn/orignal/006CagVjzy7mnCDJYope1&690">
-<meta property="og:updated_time" content="2018-07-29T03:58:38.528Z">
+<meta property="og:updated_time" content="2018-08-03T06:12:39.400Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="路漫漫其修远兮 吾将上下而求索">
-<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;写点什么呢？总想写点什么又无从下手！窗外黑云压城，暗无天日，狂风暴雨即将袭来！每次看到这副景象，内心泛起阵阵涟漪。">
-<meta name="twitter:image" content="http://s2.sinaimg.cn/orignal/006CagVjzy7mnCDJYope1&690">
+<meta name="twitter:title" content="服务器端Session和客户端Session">
+<meta name="twitter:description" content="Session其实分为客户端Session和服务器端Session。当用户首次与Web服务器建立连接的时候，服务器会给用户分发一个 SessionID作为标识。SessionID是一个由24个字符组成的随机字符串。用户每次提交页面，浏览器都会把这个SessionID包含在 HTTP头中提交给Web服务器，这样Web服务器就能区分当前请求页面的是哪一个客户端。这个SessionID就是保存在客户端的">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/20/about-myself-java/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/03/session-and-cookie/"/>
 
 
 
@@ -150,7 +148,7 @@
   };
 </script>
 
-  <title>路漫漫其修远兮 吾将上下而求索 | Mr.冼 (ง •̀_•́)ง┻━┻</title>
+  <title>服务器端Session和客户端Session | Mr.冼 (ง •̀_•́)ง┻━┻</title>
   
 
 
@@ -354,7 +352,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/20/about-myself-java/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/03/session-and-cookie/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xianJieHao">
@@ -371,7 +369,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">路漫漫其修远兮 吾将上下而求索
+          <h1 class="post-title" itemprop="name headline">服务器端Session和客户端Session
               
             
           </h1>
@@ -396,24 +394,12 @@
                 
               
 
-              <time title="创建时间：2018-07-20 09:34:29" itemprop="dateCreated datePublished" datetime="2018-07-20T09:34:29+08:00">2018-07-20</time>
+              <time title="创建时间：2018-08-03 13:46:07 / 修改时间：14:12:39" itemprop="dateCreated datePublished" datetime="2018-08-03T13:46:07+08:00">2018-08-03</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-07-29 11:58:38" itemprop="dateModified" datetime="2018-07-29T11:58:38+08:00">2018-07-29</time>
               
             
           </span>
@@ -430,7 +416,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/me/" itemprop="url" rel="index"><span itemprop="name">me</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
 
                 
                 
@@ -445,8 +431,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/20/about-myself-java/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/07/20/about-myself-java/" itemprop="commentCount"></span>
+                <a href="/2018/08/03/session-and-cookie/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/08/03/session-and-cookie/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -476,7 +462,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">3.3k</span>
+                <span title="本文字数">4.6k</span>
               
 
               
@@ -490,7 +476,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">3 分钟</span>
+                <span title="阅读时长">4 分钟</span>
               
             </div>
           
@@ -510,25 +496,24 @@
       
 
       
-        <p><img src="http://s2.sinaimg.cn/orignal/006CagVjzy7mnCDJYope1&amp;690" alt="think"></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;写点什么呢？总想写点什么又无从下手！窗外黑云压城，暗无天日，狂风暴雨即将袭来！每次看到这副景象，内心泛起阵阵涟漪。<br><a id="more"></a><br>&nbsp;&nbsp;&nbsp;&nbsp;这一周没干活，基本没干活，确切的说，前两天完成小任务，直到现在，我在埋头自己的东西。看教程，搞自己的博客，折腾折腾，危机感满满。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;我时不时提醒自己，还能待多久？</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;这样的生活是不是我想要的，又或者它是一个必须的过程？</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;思绪慢慢回到过去，且让它飘得远一些。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;我怎么就踏上了这一条路，跟数据打上交道了。当年报考志愿的时候，纯粹是因为根本不了解专业，平时又喜欢看电脑报、关注手机之类的电子<br>产品。故报此专业，无他雄心壮志。以至于入学的时候，一个志愿者学长问到为什么报了这个专业，我说乱报，他说你们这些高考生就知道考试。（其实在中国大多数考生类似我这样估计不在少数，这是大环境使然）</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;后来的计算机课程确实让我够呛的,从有点懂到完全不懂讲什么鬼。甚至上课除了玩手机不知道干什么。逃课又有点罪恶感，去了教室就假装自己上课了的自我安慰。（其实学没学好跟听不听课程没多大关系）</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;一个老师跟我讲过，作为大学老师身上的压力也是很大的，科研方面，家庭方面，教学方面。可以将精力放在教学上的很少，何况课时少。（这好像多了个听不懂课的理由）</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;时间匆匆，大二暑假期间在老师实验室待过在一段时间，明白一个团队的意义，什么样的群体才适合自己。晚上经常凌晨2点回去，我忘了我做过什么事情，就是一股解决不了又不愿意放弃的傻里傻气的劲，强迫症重症患者。<br>（现在回头想想根本没必要钻牛角尖，解决的方式需要改变。说白了，缺乏的是计算机思维而不是因为知识量的不足。我平时解决问题，不懂查看文档，这些死的“规则”。而面对问题的整个思维过程相当重要）</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;期间在学校科创中心担任网络技术部部长，说白了，让自己有点事做，跟专业相关的。也算是认识了几个优秀的学弟学妹。（嗯！我眼光还是不差的） 看学长留下的网站源码，压根没懂任何关于php,数据库等东西，<br>前端方面也是认识几个标签的前提下，自学看懂了。（心累啊，都是度娘出来的）不过也算是恶补了一下。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;大三在学校有两个项目实训，一个项目是文件上传下载的项目，jdbc实现增删改查。一个是网上书城，差不多项目。完后进行了为其四个月的培训。（很基础，基本学过，或者完全能在网上整理类似的教程，现在想想<br>，如果清楚学习路线，完全可以自己搞定）</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;接下来培训还没结束就有公司招聘了，好吧，就是现在待的公司。并且录用了。算是比较幸运吧，不用到处奔波投简历。（到现在为止，压根没投过简历，不知道算好还是不好）</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;接下来就是实习，直到毕业。我该庆幸的是一脱离学校，就没有伸手问过家里要钱。毕业后直接转正。没有什么大坎坷。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;下面是经历过的项目。第一个真实的大坑项目，让我清楚了为什么程序员被调侃为搬砖。我第一次看到十几年前的代码，jsp里写java代码的恶心，而且jstl的滥用。越看越心烦躁。还要继续往里面堆代码，有轻微洁癖症的<br>我看的难受啊。已经是千疮百孔的代码堆里堆代码，而且要处理的是写一堆js堆dom操作，替换值（实现多语言改造）。其中的工作量，花在查找已经定义好key-value是费劲的事情。堆页面的改造过程也算<br>是正在踩进门，直到数据的流向以及对问题的定位。事情搞完就是测试了，测试居然消耗了那么大的工作量，几个月，包括功能测试，静态页面测试。还用兼容不同浏览器，ie8-11,还有三个语言版本。也就是每条测试用例之至少执行12遍。<br>太认真去纠结细节或者了解业务本身，是很痛苦而且根本无法按时完成的。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;接下来是珠江新城的一个门户项目，刚开始处理jboss集群问题，原本一直使用的社区版jboss中间件，发现集群方案很旧了，而且没有集群的域管理概念。于是下载了比较新版的企业版。这个算比较新的，<br>网上只能找到英文官方文档。对于四级踩线的我来说，呵呵呵哒！吃力地硬着头皮看了点。发现根本无济于事。于是搜索各种博客，csdn等等，大多雷同的方案，可是就是无法解决我的问题。搞了几天，才把驱动<br>加载成功！事情有点棘手，虽然leader没有给什么明确的deadline,可是自己心里焦虑不安（真是强迫症），解决不了就是很不爽，这天时间过去了，什么进展也没有，就觉得没有价值感存在感（自己将自己逼死）<br>好吧，放弃了。用老方式做负载均衡集群（参照着文档操作，也还能达到一定目的）。后续做的单点登陆，就有点坑了，公司的单点登陆的包写法是jdk1.5的语法写的。客户那边使用的OA网站还是jdk1.4的，我直接<br>吐血…我日，还有那么老的东西，jdk10都出来了。不能随便改项目代码（事实上也根本不可能改）毕竟出事谁都承担不起。那就修改包吧，修改的过程才发现了很多语法区别，必读jdk5才有集合泛型、自动<br>拆箱装箱等问题。这玩意看着改，也不知道改的对不对，因为没有测试过程。当改到剩下几个地方的时候，突然通知去深圳协助修改多语言问题。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;突然觉得小庆幸，不用搞那些繁琐的东西了。接下来就是一个月的出差之旅。刚开始是新鲜感满满的，去了之后，呵呵呵呵哒！面对完全不懂的逻辑，要看代码，问实施人员沟通。基本是整个业务通了，也就能<br>解决一半问题了。但是确实代码不好改。你可能看懂的是部分逻辑，根据经验修改。突然发现改出新的问题（看别人写的代码真是很痛苦的，心里总有一匹草泥马在奔腾）。期间也见证了甲方乙方的各种<br>“博弈”，各种甩锅。更多的是无效的沟通，繁琐的处理流程（可能站在管理者的角度很重要，但是对于开发者来说，简直消耗我们的资源）。大公司的项目质量管控严格的一逼，稍微改动一句代码，刨根问底的<br>追究，出了事情谁负责，你们为什么要改等等（我没经历过，先前的开发人员经历过）。多语言本身引发的问题大多数比较容易解决。难处理的还是原本系统存在的问题（当时测试多语言的时候，上千个问题记录，<br>后来公司被黑客工具，数据被删除了）。原本的问题也有几百个。之间还夹着新的需求。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;好吧，没等到这个项目上线，被告知要去贵阳中烟出差。怀着几分出省的新鲜感以及逃离深圳项目的快感，去到贵阳中烟。这个项目第一次接触比较新鲜感，代码是从零开始构建的，技术比较主流，freemarker、<br>layui、springMVC、mybaits。简约干净看着就舒服。去了一个月被告知返回公司（原本的同事要过去，床位不够）。期间本来想去黄果树瀑布，青岩古镇玩下，都没去成，基本在贵阳市区逛逛。上班时间896，<br>每天坐着的时间太长了，就算一天什么也不干，光坐着就腰酸背痛。这算是通病吧！程序员的经常性疲劳！虽然说没很大压力，但是总觉得哪里不对。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;回到广州，几分亲切感。估计是待久了，对广州的感觉比较浓一点，朋友同学多数在这边，周末还可以约上一餐。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;一路走来，时不时冒出一个想法，又自己将其扑灭了。我是不是应该重新思考软件开发这个工作。如果人只知道漫无目的工作，将毫无意义。【可能是某人眼中中华传统文化男性的价值观】</p>
+        <h3 id="Session其实分为客户端Session和服务器端Session。"><a href="#Session其实分为客户端Session和服务器端Session。" class="headerlink" title="Session其实分为客户端Session和服务器端Session。"></a>Session其实分为客户端Session和服务器端Session。</h3><p>当用户首次与Web服务器建立连接的时候，服务器会给用户分发一个 SessionID作为标识。<br>SessionID是一个由24个字符组成的随机字符串。用户每次提交页面，浏览器都会把这个SessionID包含在 HTTP头中提交给Web服务器，这样Web服务器就能区分当前请求页面的是哪一个客户端。这个SessionID就是保存在客户端的，属于客户端Session。<br><a id="more"></a><br>其实客户端Session默认是以cookie的形式来存储的，所以当用户禁用了cookie的话，服务器端就得不到SessionID。这时我们可以使用url的方式来存储客户端Session。也就是将SessionID直接写在了url中，当然这种方法不常用。</p>
+<h3 id="sessionid如何产生？由谁产生？保存在哪里？"><a href="#sessionid如何产生？由谁产生？保存在哪里？" class="headerlink" title="sessionid如何产生？由谁产生？保存在哪里？"></a>sessionid如何产生？由谁产生？保存在哪里？</h3><p>sessionid是一个会话的key，浏览器第一次访问服务器会在服务器端生成一个session，<br>有一个sessionid和它对应。tomcat生成的sessionid叫做jsessionid。<br>session在访问tomcat服务器HttpServletRequest的getSession(true)的时候创建，tomcat的ManagerBase类提供创建sessionid的方法：随机数+时间+jvmid；<br>它存储在服务器的内存中，tomcat的StandardManager类将session存储在内存中，也可以持久化到file，数据库，memcache，Redis等。客户端只保存sessionid到cookie中，而不会保存session，session销毁只能通过invalidate或超时，关掉浏览器并不会关闭session。</p>
+<h3 id="session会因为浏览器的关闭而删除吗？"><a href="#session会因为浏览器的关闭而删除吗？" class="headerlink" title="session会因为浏览器的关闭而删除吗？"></a>session会因为浏览器的关闭而删除吗？</h3><p>Cookie分为内存中Cookie（也可以说是进程中Cookie）和硬盘中Cookie。大部分的Session<br>机制都使用进程中Cookie来保存Session<br>id的，关闭浏览器后这个进程也就自动消失了，进程中的Cookie自然就消失了，那么Session id也跟着消失了，再次连接到服务器时也就无法找到原来的Session了。<br>当然，我们可以在登陆时点击下次自动登录，比如说CSDN的“记住我一周”，或者我们的购物车信息可以在切换不同浏览器时依然可用。这就要用到我们上文提到的另一种Cookie了——硬盘中Cookie，这时Session id将长期保存在硬盘上的Cookie中，直到失效为止。</p>
+<h3 id="tomcat中session的创建："><a href="#tomcat中session的创建：" class="headerlink" title="tomcat中session的创建："></a>tomcat中session的创建：</h3><p>ManagerBase是所有session管理工具类的基类，它是一个抽象类，所有具体实现session<br>管理功能的类都要继承这个类，该类有一个受保护的方法，该方法就是创建sessionId值的方法：<br>（tomcat的session的id值生成的机制是一个随机数加时间加上jvm的id值，jvm的id值会根据服务器的硬件信息计算得来，因此不同jvm的id值都是唯一的）， StandardManager类是tomcat容器里默认的session管理实现类，<br>它会将session的信息存储到web容器所在服务器的内存里。<br>PersistentManagerBase也是继承ManagerBase类，它是所有持久化存储session信息的基类，PersistentManager继承了PersistentManagerBase，但是这个类只是多了一个静态变量和一个getName方法，目前看来意义不大，对于持久化存储session，tomcat还提供了StoreBase的抽象类，它是所有持久化存储session的基类，另外tomcat还给出了文件存储FileStore和数据存储JDBCStore两个实现。</p>
+<p>session是解决http协议无状态问题的服务端解决方案，它能让客户端和服务端一系列交互动作变成一个完整的事务，能使网站变成一个真正意义上的软件</p>
+<p>扩展：</p>
+<h3 id="会话cookie和持久cookie的区别"><a href="#会话cookie和持久cookie的区别" class="headerlink" title="会话cookie和持久cookie的区别"></a>会话cookie和持久cookie的区别</h3><p>如果不设置过期时间，则表示这个cookie生命周期为浏览器会话期间，只要关闭浏览器窗口，<br>cookie就消失了。这种生命期为浏览会话期的cookie被称为会话cookie。会话cookie一般不保存在硬盘上而是保存在内存里。如果设置了过期时间，浏览器就会把cookie保存到硬盘上，关闭后再次打开浏览器，这些cookie依然有效直到超过设定的过期时间。存储在硬盘上的cookie可以在不同的浏览器进程间共享，比如两个IE窗口。而对于保存在内存的cookie，不同的浏览器有不同的处理方式。</p>
+<h3 id="保存session-id的几种方式"><a href="#保存session-id的几种方式" class="headerlink" title="保存session id的几种方式"></a>保存session id的几种方式</h3><p>A．保存session id的方式可以采用cookie，这样在交互过程中浏览器可以自动的按照规则把这个标识发送给服务器。<br>B．由于cookie可以被人为的禁止，必须有其它的机制以便在cookie被禁止时仍然能够把session id传递回服务器，经常采用的一种技术叫做URL重写，就是把session id附加在URL路径的后面，附加的方式也有两种，一种是作为URL路径的附加信息，另一种是作为查询字符串附加在URL后面。网络在整个交互过程中始终保持状态，就必须在每个客户端可能请求的路径后面都包含这个session id。<br>C．另一种技术叫做表单隐藏字段。就是服务器会自动修改表单，添加一个隐藏字段，以便在表单提交时能够把session id传递回服务器。</p>
+<h3 id="session什么时候被创建"><a href="#session什么时候被创建" class="headerlink" title="session什么时候被创建"></a>session什么时候被创建</h3><p>一个常见的错误是以为session在有客户端访问时就被创建，然而事实是直到某server<br>端程序(如Servlet)调用HttpServletRequest.getSession(true)这样的语句时才会被创建。</p>
+<h3 id="session何时被删除"><a href="#session何时被删除" class="headerlink" title="session何时被删除"></a>session何时被删除</h3><p>session在下列情况下被删除：<br>A．程序调用HttpSession.invalidate()<br>B．距离上一次收到客户端发送的session id时间间隔超过了session的最大有效时间<br>C．服务器进程被停止<br>再次注意关闭浏览器只会使存储在客户端浏览器内存中的session cookie失效，不会使服务器端的session对象失效。</p>
+<p>getSession()/getSession(true)、getSession(false)的区别<br>getSession()/getSession(true)：当session存在时返回该session，否则新建一个session并返回该对象<br>getSession(false)：当session存在时返回该session，否则不会新建session，返回null</p>
+<p>使用isNew来判断用户是否为新旧用户的错误做法<br>public boolean isNew()方法如果会话尚未和客户程序(浏览器)发生任何联系，则这个方法返回true，这一般是因为会话是新建的，不是由输入的客户请求所引起的。<br>但如果isNew返回false，只不过是说明他之前曾经访问该Web应用，并不代表他们曾访问过我们的servlet或JSP页面。<br>因为session是与用户相关的，在用户之前访问的每一个页面都有可能创建了会话。因此isNew为false只能说用户之前访问过该Web应用，session可以是当前页面创建，也可能是由用户之前访问过的页面创建的。<br>正确的做法是判断某个session中是否存在某个特定的key且其value是否正确</p>
+<p>session cookie和session对象的生命周期是一样的吗<br>当用户关闭了浏览器虽然session cookie已经消失，但session对象仍然保存在服务器端</p>
+<h3 id="是否只要关闭浏览器，session就消失了"><a href="#是否只要关闭浏览器，session就消失了" class="headerlink" title="是否只要关闭浏览器，session就消失了"></a>是否只要关闭浏览器，session就消失了</h3><p>程序一般都是在用户做log off的时候发个指令去删除session，然而浏览器从来不会主动在<br>关闭之前通知服务器它将要被关闭，因此服务器根本不会有机会知道浏览器已经关闭。服务器会一直保留这个会话对象直到它处于非活动状态超过设定的间隔为止。<br>之所以会有这种错误的认识，是因为大部分session机制都使用会话cookie来保存session id，而关闭浏览器后这个session id就消失了，再次连接到服务器时也就无法找到原来的session。<br>如果服务器设置的cookie被保存到硬盘上，或者使用某种手段改写浏览器发出的HTTP请求报头，把原来的session id发送到服务器，则再次打开浏览器仍然能够找到原来的session。<br>恰恰是由于关闭浏览器不会导致session被删除，迫使服务器为session设置了一个失效时间，当距离客户上一次使用session的时间超过了这个失效时间时，服务器就可以认为客户端已经停止了活动，才会把session删除以节省存储空间。<br>　　由此我们可以得出如下结论：<br>　　关闭浏览器，只会是浏览器端内存里的session cookie消失，但不会使保存在服务器端的session对象消失，同样也不会使已经保存到硬盘上的持久化cookie消失。</p>
+<h3 id="session共享问题"><a href="#session共享问题" class="headerlink" title="session共享问题"></a>session共享问题</h3><p>当下的互联网网站为了提高网站安全性和并发量，服务端的部署的服务器的数量往往是大于<br>或等于两台，多台服务器对外提供的服务是等价的，但是不同的服务器上面肯定会有不同的web容器，由上面的讲述我们知道session的实现机制都是web容器里内部机制，这就导致一个web容器里所生成的session的id值是不同的，因此当一个请求到了A服务器，浏览器得到响应后，客户端存下的是A服务器上所生成的session的id，当在另一个请求分发到了B服务器，B服务器上的web容器是不能识别这个session的id值，更不会有这个sessionID所对应记录下来的信息，这个时候就需要两个不同web容器之间进行session的同步。<br>一般大型互联公司的网站都是有一个个独立的频道所组成的，例如我们常用的百度，会有百度搜索，百度音乐，百度百科等等，我相信他们不会把这些不同频道都给一个开发团队完成，应该每个频道都是一个独立开发团队，因为每个频道的应用的都是独立的web应用，那么就存在一个跨站点的session同步的问题，跨站点的登录可以使用单点登录的（SSO）的解决方案，但是不管什么解决方案，跨站点的session共享任然是逃避不了的问题。</p>
+<h3 id="解决session相关问题的技术方案"><a href="#解决session相关问题的技术方案" class="headerlink" title="解决session相关问题的技术方案"></a>解决session相关问题的技术方案</h3><p>由上所述，session一共有两个问题需要解决：<br>1) session的存储应该独立于web容器，也要独立于部署web容器的服务器；<br>2）如何进行高效的session同步。</p>
+<p>在讲到解决这些问题之前，我们首先要考虑下session如何存储才是高效，是存在内存、文件还是数据库了？文件和数据库的存储方式都是将session的数据固化到硬盘上，操作硬盘的方式就是IO，IO操作的效率是远远低于操作内存的数据，因此文件和数据库存储方式是不可取的，所以将session数据存储到内存是最佳的选择。因此最好的解决方案就是使用分布式缓存技术，例如：memcached和redis，将session信息的存储独立出来也是解决session同步问题的方法。</p>
+<p>ps：来源于网络</p>
 
       
     </div>
@@ -549,7 +534,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/me/" rel="tag"><i class="fa fa-tag"></i> me</a>
+            <a href="/tags/java/" rel="tag"><i class="fa fa-tag"></i> java</a>
           
         </div>
       
@@ -562,8 +547,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/05/spring-Assert/" rel="next" title="spring方法入参检测工具类">
-                <i class="fa fa-chevron-left"></i> spring方法入参检测工具类
+              <a href="/2018/07/25/spring-boot-devtools/" rel="next" title="Spring Boot热部署：spring-boot-devtools">
+                <i class="fa fa-chevron-left"></i> Spring Boot热部署：spring-boot-devtools
               </a>
             
           </div>
@@ -572,8 +557,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/21/investment-time/" rel="prev" title="时间就像金钱一样，你得学会投资时间">
-                时间就像金钱一样，你得学会投资时间 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/08/03/javascript-getParamFormUrl/" rel="prev" title="javascript 从浏览器url获取参数">
+                javascript 从浏览器url获取参数 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -622,8 +607,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -722,6 +716,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Session其实分为客户端Session和服务器端Session。"><span class="nav-number">1.</span> <span class="nav-text">Session其实分为客户端Session和服务器端Session。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sessionid如何产生？由谁产生？保存在哪里？"><span class="nav-number">2.</span> <span class="nav-text">sessionid如何产生？由谁产生？保存在哪里？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#session会因为浏览器的关闭而删除吗？"><span class="nav-number">3.</span> <span class="nav-text">session会因为浏览器的关闭而删除吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tomcat中session的创建："><span class="nav-number">4.</span> <span class="nav-text">tomcat中session的创建：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#会话cookie和持久cookie的区别"><span class="nav-number">5.</span> <span class="nav-text">会话cookie和持久cookie的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#保存session-id的几种方式"><span class="nav-number">6.</span> <span class="nav-text">保存session id的几种方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#session什么时候被创建"><span class="nav-number">7.</span> <span class="nav-text">session什么时候被创建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#session何时被删除"><span class="nav-number">8.</span> <span class="nav-text">session何时被删除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#是否只要关闭浏览器，session就消失了"><span class="nav-number">9.</span> <span class="nav-text">是否只要关闭浏览器，session就消失了</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#session共享问题"><span class="nav-number">10.</span> <span class="nav-text">session共享问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解决session相关问题的技术方案"><span class="nav-number">11.</span> <span class="nav-text">解决session相关问题的技术方案</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

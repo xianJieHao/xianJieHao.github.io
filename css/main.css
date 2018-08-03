@@ -1893,7 +1893,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #05139f;
+  background: #ffff67;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2924,5 +2924,9 @@ body {
   color: #f0e68c;
 }
 :-ms-input-placeholder {
+  color: #f0e68c;
+}
+.pagination span,
+.pagination a {
   color: #f0e68c;
 }
