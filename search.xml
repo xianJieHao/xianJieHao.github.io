@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[gotta-have-you]]></title>
-    <url>%2F2018%2F08%2F03%2Fgotta-have-you%2F</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[hexo 自定样式]]></title>
     <url>%2F2018%2F08%2F03%2Fblog-custom-style%2F</url>
     <content type="text"><![CDATA[本博客自定样式body &#123; background:url(http://s5.sinaimg.cn/orignal/006CagVjzy7msKeDaXW94&amp;690); background-repeat: no-repeat; background-attachment:fixed; background-position:50% 50%; background-size:cover;&#125;.header &#123; background: rgba(0,0,0,0.7) none repeat scroll;&#125;.posts-expand .page, .content .archive&#123; background-color: #fff; opacity: 0.9; padding: 2rem;&#125;.posts-expand .post &#123; margin-top: 50px; background-color: #fff; padding: 2rem; opacity: 0.9; border-radius: 4px;&#125;.posts-expand .post-title, .posts-expand .post-meta &#123; text-align: center;&#125;.post-button &#123; text-align: center;&#125;.footer &#123; background: rgba(0,0,0,0.5) none repeat scroll;&#125;.menu-item-active a &#123; background: none;&#125;.site-title &#123; color: #f0e68c; &#125;.header a &#123; color: #f0e68c;&#125;.footer &#123; color: #f0e68c;&#125;.footer-inner &#123; text-align: center;&#125;.v &#123; background: rgba(0,0,0,0.5) none repeat scroll; &#125;.v *&#123; color: #f0e68c !important;&#125;.v .vbtn &#123; border: 1px solid #222 !important; background: #222 !important;&#125;.v .vlist .vcard .vhead .vsys &#123; background: #222 !important;&#125;::-moz-placeholder &#123; color: #f0e68c; &#125;::-webkit-input-placeholder &#123; color: #f0e68c; &#125;:-ms-input-placeholder &#123; color: #f0e68c; &#125;.pagination span, .pagination a &#123; color: #f0e68c; &#125;]]></content>
