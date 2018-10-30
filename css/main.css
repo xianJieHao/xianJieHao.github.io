@@ -1893,7 +1893,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #baffa6;
+  background: #df71e2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2857,11 +2857,11 @@ hr {
   }
 }
 body {
-  background: url("http://s5.sinaimg.cn/orignal/006CagVjzy7msKeDaXW94&690");
+  background: url("http://pdj7vv3pv.bkt.clouddn.com/cover_bg-121d68d0f30118182be4f9ada6c2c502.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 .header {
   background: rgba(0,0,0,0.7) none repeat scroll;
