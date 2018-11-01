@@ -120,14 +120,17 @@
 
 
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="var ap = new APlayer({             element: document.getElementById(&quot;aplayer-BNvqrlho&quot;),             narrow: false,             autoplay: true,">
+<meta property="og:type" content="website">
 <meta property="og:title" content="音乐">
 <meta property="og:url" content="http://yoursite.com/music/index.html">
 <meta property="og:site_name" content="Mr.冼 (ง •̀_•́)ง┻━┻">
+<meta property="og:description" content="var ap = new APlayer({             element: document.getElementById(&quot;aplayer-BNvqrlho&quot;),             narrow: false,             autoplay: true,">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-31T14:53:52.508Z">
+<meta property="og:updated_time" content="2018-11-01T01:00:52.142Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="音乐">
+<meta name="twitter:description" content="var ap = new APlayer({             element: document.getElementById(&quot;aplayer-BNvqrlho&quot;),             narrow: false,             autoplay: true,">
 
 
 
@@ -182,6 +185,8 @@
   </style>
 </noscript>
 
+<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
+<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -264,8 +269,8 @@
         
         
           
-          <li class="menu-item menu-item-music menu-item-active">
-    <a href="/music/" rel="section">
+          <li class="menu-item menu-item-music">
+    <a href="/categories/music" rel="section">
       <i class="menu-item-icon fa fa-fw fa-music"></i> <br />音乐</a>
   </li>
         
@@ -273,7 +278,7 @@
         
           
           <li class="menu-item menu-item-picture">
-    <a href="/picture/" rel="section">
+    <a href="/categories/photo" rel="section">
       <i class="menu-item-icon fa fa-fw fa-image"></i> <br />相册</a>
   </li>
 
@@ -391,6 +396,27 @@
         
         
           
+        <div id="aplayer-BNvqrlho" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+            <pre class="aplayer-lrc-content"></pre>
+        </div>
+        <script>
+          var ap = new APlayer({
+            element: document.getElementById("aplayer-BNvqrlho"),
+            narrow: false,
+            autoplay: true,
+            showlrc: false,
+            music: {
+              title: "夜空中最亮的星",
+              author: "逃跑计划",
+              url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3",
+              pic: "",
+              lrc: ""
+            }
+          });
+          window.aplayers || (window.aplayers = []);
+          window.aplayers.push(ap);
+        </script>
+
         
       </div>
       
@@ -449,7 +475,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -476,7 +502,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -507,7 +537,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">9</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -561,7 +595,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">39k</span>
+    <span title="站点总字数">40k</span>
   
 
   
@@ -572,7 +606,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">31 分钟</span>
+    <span title="站点阅读时长">32 分钟</span>
   
 </div>
 

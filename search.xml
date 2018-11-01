@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[hexo 自定样式]]></title>
     <url>%2F2018%2F08%2F03%2Fblog-custom-style%2F</url>
-    <content type="text"><![CDATA[本博客自定样式body &#123; background:url(http://s5.sinaimg.cn/orignal/006CagVjzy7msKeDaXW94&amp;690); background-repeat: no-repeat; background-attachment:fixed; background-position:50% 50%; background-size:cover;&#125;.header &#123; background: rgba(0,0,0,0.7) none repeat scroll;&#125;.posts-expand .page, .content .archive&#123; background-color: #fff; opacity: 0.9; padding: 2rem;&#125;.posts-expand .post &#123; margin-top: 50px; background-color: #fff; padding: 2rem; opacity: 0.9; border-radius: 4px;&#125;.posts-expand .post-title, .posts-expand .post-meta &#123; text-align: center;&#125;.post-button &#123; text-align: center;&#125;.footer &#123; background: rgba(0,0,0,0.5) none repeat scroll;&#125;.menu-item-active a &#123; background: none;&#125;.site-title &#123; color: #f0e68c; &#125;.header a &#123; color: #f0e68c;&#125;.footer &#123; color: #f0e68c;&#125;.footer-inner &#123; text-align: center;&#125;.v &#123; background: rgba(0,0,0,0.5) none repeat scroll; &#125;.v *&#123; color: #f0e68c !important;&#125;.v .vbtn &#123; border: 1px solid #222 !important; background: #222 !important;&#125;.v .vlist .vcard .vhead .vsys &#123; background: #222 !important;&#125;::-moz-placeholder &#123; color: #f0e68c; &#125;::-webkit-input-placeholder &#123; color: #f0e68c; &#125;:-ms-input-placeholder &#123; color: #f0e68c; &#125;.pagination span, .pagination a &#123; color: #f0e68c; &#125;]]></content>
+    <content type="text"><![CDATA[本博客自定样式, 图片使用七牛云的免费存储。body &#123; background:url(http://s5.sinaimg.cn/orignal/006CagVjzy7msKeDaXW94&amp;690); background-repeat: no-repeat; background-attachment:fixed; background-position:50% 50%; background-size:100% 100%;&#125;.header &#123; background: rgba(0,0,0,0.7) none repeat scroll;&#125;.posts-expand .page, .content .archive&#123; background-color: #fff; opacity: 0.9; padding: 2rem;&#125;.posts-expand .post &#123; margin-top: 50px; background-color: #fff; padding: 2rem; opacity: 0.9; border-radius: 4px;&#125;.posts-expand .post-title, .posts-expand .post-meta &#123; text-align: center;&#125;.post-button &#123; text-align: center;&#125;.footer &#123; background: rgba(0,0,0,0.5) none repeat scroll;&#125;.menu-item-active a &#123; background: none;&#125;.site-title &#123; color: #f0e68c; &#125;.header a &#123; color: #f0e68c;&#125;.footer &#123; color: #f0e68c;&#125;.footer-inner &#123; text-align: center;&#125;.v &#123; background: rgba(0,0,0,0.5) none repeat scroll; &#125;.v *&#123; color: #f0e68c !important;&#125;.v .vbtn &#123; border: 1px solid #222 !important; background: #222 !important;&#125;.v .vlist .vcard .vhead .vsys &#123; background: #222 !important;&#125;::-moz-placeholder &#123; color: #f0e68c; &#125;::-webkit-input-placeholder &#123; color: #f0e68c; &#125;:-ms-input-placeholder &#123; color: #f0e68c; &#125;.pagination span, .pagination a &#123; color: #f0e68c; &#125;]]></content>
       <categories>
         <category>code</category>
       </categories>
@@ -53,6 +53,28 @@
       </categories>
       <tags>
         <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[一些照片]]></title>
+    <url>%2F2018%2F07%2F31%2Fphonto-2018-10-11-1%2F</url>
+    <content type="text"><![CDATA[渔民新村，广州最后一个渔村。黄埔古巷进去一点，二更的视频看到。这个肥胖的身躯。。。嗯，是要改变一下的当是去散步看看，岸边有点轻微鱼腥味道。。。。。。广州番禺莲花山，其实还不错。内有悬崖峭壁，莲花池，寺庙 one 1one 2one 3 一个朋友-唐 一个朋友-唐一个朋友-罗 附近的云，从毕业到这里找房子，见证了聊聊无几的人到现在连广场舞大妈差点没地方跳舞的人流 依旧是夕阳射在公司大楼的玻璃墙上，角度不好，真实景色很好 晚上下班，昏黄的路灯映照下的马路，公交站。旁边在建地铁，已经一年多了吧！瞎拍的。 每天早晨上班经过这条，忽然发现晨光渗透过的树叶的景象很美！赶紧掏出索尼大法拍下。像是这样仿佛美丽的偶遇，其实身边很多，忙碌的脚步容易忽视点滴 下班的傍晚，每天都看到的晚霞！]]></content>
+      <categories>
+        <category>photo</category>
+      </categories>
+      <tags>
+        <tag>photo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[夜空中最亮的星]]></title>
+    <url>%2F2018%2F07%2F29%2Fmusic-2018-11-1%2F</url>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-qJWMxRQV"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+      <categories>
+        <category>music</category>
+      </categories>
+      <tags>
+        <tag>music</tag>
       </tags>
   </entry>
   <entry>
