@@ -1,0 +1,91 @@
+---
+title: 服务器端Session和客户端Session
+date: 2018-08-03 13:46:07
+tags: java
+categories: java
+password:
+---
+
+### Session其实分为客户端Session和服务器端Session。
+当用户首次与Web服务器建立连接的时候，服务器会给用户分发一个 SessionID作为标识。
+SessionID是一个由24个字符组成的随机字符串。用户每次提交页面，浏览器都会把这个SessionID包含在 HTTP头中提交给Web服务器，这样Web服务器就能区分当前请求页面的是哪一个客户端。这个SessionID就是保存在客户端的，属于客户端Session。
+<!--more-->
+其实客户端Session默认是以cookie的形式来存储的，所以当用户禁用了cookie的话，服务器端就得不到SessionID。这时我们可以使用url的方式来存储客户端Session。也就是将SessionID直接写在了url中，当然这种方法不常用。
+
+### sessionid如何产生？由谁产生？保存在哪里？
+sessionid是一个会话的key，浏览器第一次访问服务器会在服务器端生成一个session，
+有一个sessionid和它对应。tomcat生成的sessionid叫做jsessionid。
+session在访问tomcat服务器HttpServletRequest的getSession(true)的时候创建，tomcat的ManagerBase类提供创建sessionid的方法：随机数+时间+jvmid；
+它存储在服务器的内存中，tomcat的StandardManager类将session存储在内存中，也可以持久化到file，数据库，memcache，Redis等。客户端只保存sessionid到cookie中，而不会保存session，session销毁只能通过invalidate或超时，关掉浏览器并不会关闭session。
+
+### session会因为浏览器的关闭而删除吗？
+Cookie分为内存中Cookie（也可以说是进程中Cookie）和硬盘中Cookie。大部分的Session
+机制都使用进程中Cookie来保存Session 
+id的，关闭浏览器后这个进程也就自动消失了，进程中的Cookie自然就消失了，那么Session id也跟着消失了，再次连接到服务器时也就无法找到原来的Session了。
+当然，我们可以在登陆时点击下次自动登录，比如说CSDN的“记住我一周”，或者我们的购物车信息可以在切换不同浏览器时依然可用。这就要用到我们上文提到的另一种Cookie了——硬盘中Cookie，这时Session id将长期保存在硬盘上的Cookie中，直到失效为止。
+
+### tomcat中session的创建：
+ManagerBase是所有session管理工具类的基类，它是一个抽象类，所有具体实现session
+管理功能的类都要继承这个类，该类有一个受保护的方法，该方法就是创建sessionId值的方法：
+（tomcat的session的id值生成的机制是一个随机数加时间加上jvm的id值，jvm的id值会根据服务器的硬件信息计算得来，因此不同jvm的id值都是唯一的）， StandardManager类是tomcat容器里默认的session管理实现类，
+它会将session的信息存储到web容器所在服务器的内存里。
+PersistentManagerBase也是继承ManagerBase类，它是所有持久化存储session信息的基类，PersistentManager继承了PersistentManagerBase，但是这个类只是多了一个静态变量和一个getName方法，目前看来意义不大，对于持久化存储session，tomcat还提供了StoreBase的抽象类，它是所有持久化存储session的基类，另外tomcat还给出了文件存储FileStore和数据存储JDBCStore两个实现。
+
+session是解决http协议无状态问题的服务端解决方案，它能让客户端和服务端一系列交互动作变成一个完整的事务，能使网站变成一个真正意义上的软件
+
+扩展：
+### 会话cookie和持久cookie的区别
+如果不设置过期时间，则表示这个cookie生命周期为浏览器会话期间，只要关闭浏览器窗口，
+cookie就消失了。这种生命期为浏览会话期的cookie被称为会话cookie。会话cookie一般不保存在硬盘上而是保存在内存里。如果设置了过期时间，浏览器就会把cookie保存到硬盘上，关闭后再次打开浏览器，这些cookie依然有效直到超过设定的过期时间。存储在硬盘上的cookie可以在不同的浏览器进程间共享，比如两个IE窗口。而对于保存在内存的cookie，不同的浏览器有不同的处理方式。
+
+### 保存session id的几种方式
+A．保存session id的方式可以采用cookie，这样在交互过程中浏览器可以自动的按照规则把这个标识发送给服务器。
+B．由于cookie可以被人为的禁止，必须有其它的机制以便在cookie被禁止时仍然能够把session id传递回服务器，经常采用的一种技术叫做URL重写，就是把session id附加在URL路径的后面，附加的方式也有两种，一种是作为URL路径的附加信息，另一种是作为查询字符串附加在URL后面。网络在整个交互过程中始终保持状态，就必须在每个客户端可能请求的路径后面都包含这个session id。
+C．另一种技术叫做表单隐藏字段。就是服务器会自动修改表单，添加一个隐藏字段，以便在表单提交时能够把session id传递回服务器。
+
+### session什么时候被创建
+一个常见的错误是以为session在有客户端访问时就被创建，然而事实是直到某server
+端程序(如Servlet)调用HttpServletRequest.getSession(true)这样的语句时才会被创建。
+
+### session何时被删除
+session在下列情况下被删除：
+A．程序调用HttpSession.invalidate()
+B．距离上一次收到客户端发送的session id时间间隔超过了session的最大有效时间
+C．服务器进程被停止
+再次注意关闭浏览器只会使存储在客户端浏览器内存中的session cookie失效，不会使服务器端的session对象失效。
+
+getSession()/getSession(true)、getSession(false)的区别
+getSession()/getSession(true)：当session存在时返回该session，否则新建一个session并返回该对象
+getSession(false)：当session存在时返回该session，否则不会新建session，返回null
+
+使用isNew来判断用户是否为新旧用户的错误做法
+public boolean isNew()方法如果会话尚未和客户程序(浏览器)发生任何联系，则这个方法返回true，这一般是因为会话是新建的，不是由输入的客户请求所引起的。
+但如果isNew返回false，只不过是说明他之前曾经访问该Web应用，并不代表他们曾访问过我们的servlet或JSP页面。
+因为session是与用户相关的，在用户之前访问的每一个页面都有可能创建了会话。因此isNew为false只能说用户之前访问过该Web应用，session可以是当前页面创建，也可能是由用户之前访问过的页面创建的。
+正确的做法是判断某个session中是否存在某个特定的key且其value是否正确
+
+session cookie和session对象的生命周期是一样的吗
+当用户关闭了浏览器虽然session cookie已经消失，但session对象仍然保存在服务器端
+
+### 是否只要关闭浏览器，session就消失了 
+程序一般都是在用户做log off的时候发个指令去删除session，然而浏览器从来不会主动在
+关闭之前通知服务器它将要被关闭，因此服务器根本不会有机会知道浏览器已经关闭。服务器会一直保留这个会话对象直到它处于非活动状态超过设定的间隔为止。
+之所以会有这种错误的认识，是因为大部分session机制都使用会话cookie来保存session id，而关闭浏览器后这个session id就消失了，再次连接到服务器时也就无法找到原来的session。
+如果服务器设置的cookie被保存到硬盘上，或者使用某种手段改写浏览器发出的HTTP请求报头，把原来的session id发送到服务器，则再次打开浏览器仍然能够找到原来的session。
+恰恰是由于关闭浏览器不会导致session被删除，迫使服务器为session设置了一个失效时间，当距离客户上一次使用session的时间超过了这个失效时间时，服务器就可以认为客户端已经停止了活动，才会把session删除以节省存储空间。
+　　由此我们可以得出如下结论：
+　　关闭浏览器，只会是浏览器端内存里的session cookie消失，但不会使保存在服务器端的session对象消失，同样也不会使已经保存到硬盘上的持久化cookie消失。
+
+### session共享问题
+当下的互联网网站为了提高网站安全性和并发量，服务端的部署的服务器的数量往往是大于
+或等于两台，多台服务器对外提供的服务是等价的，但是不同的服务器上面肯定会有不同的web容器，由上面的讲述我们知道session的实现机制都是web容器里内部机制，这就导致一个web容器里所生成的session的id值是不同的，因此当一个请求到了A服务器，浏览器得到响应后，客户端存下的是A服务器上所生成的session的id，当在另一个请求分发到了B服务器，B服务器上的web容器是不能识别这个session的id值，更不会有这个sessionID所对应记录下来的信息，这个时候就需要两个不同web容器之间进行session的同步。
+一般大型互联公司的网站都是有一个个独立的频道所组成的，例如我们常用的百度，会有百度搜索，百度音乐，百度百科等等，我相信他们不会把这些不同频道都给一个开发团队完成，应该每个频道都是一个独立开发团队，因为每个频道的应用的都是独立的web应用，那么就存在一个跨站点的session同步的问题，跨站点的登录可以使用单点登录的（SSO）的解决方案，但是不管什么解决方案，跨站点的session共享任然是逃避不了的问题。
+
+### 解决session相关问题的技术方案
+由上所述，session一共有两个问题需要解决：
+1) session的存储应该独立于web容器，也要独立于部署web容器的服务器；
+2）如何进行高效的session同步。
+
+在讲到解决这些问题之前，我们首先要考虑下session如何存储才是高效，是存在内存、文件还是数据库了？文件和数据库的存储方式都是将session的数据固化到硬盘上，操作硬盘的方式就是IO，IO操作的效率是远远低于操作内存的数据，因此文件和数据库存储方式是不可取的，所以将session数据存储到内存是最佳的选择。因此最好的解决方案就是使用分布式缓存技术，例如：memcached和redis，将session信息的存储独立出来也是解决session同步问题的方法。
+
+ps：来源于网络
