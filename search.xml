@@ -2,13 +2,24 @@
 <search>
   <entry>
     <title><![CDATA[上下班的路上]]></title>
-    <url>%2F2018%2F11%2F12%2Fphonto-2018-10-11-2%2F</url>
+    <url>%2F2018%2F11%2F12%2Fphonto-work%2F</url>
     <content type="text"><![CDATA[附近的万科云，从毕业到这里找房子，见证了聊聊无几，毫无生气到现在连大妈们都要抢占大方跳广场舞，每当旁晚下班经过，溜娃的，遛狗的，老人，小孩，情侣，很是热闹 依旧是夕阳射在公司大楼的玻璃墙上，角度不好，真实景色还真的挺不错！ 晚上下班，昏黄的路灯映照下的马路，公交站。旁边在建地铁，已经一年多了！ 每天早晨上班经过这条路，忽然发现晨光渗透过树叶的景象很美。赶紧掏出索尼大法拍下，像是美丽的偶遇。忙碌的脚步往往容易忽视生活中美好的点点滴滴！ 下班的傍晚，每天都看到的晚霞！]]></content>
       <categories>
         <category>photo</category>
       </categories>
       <tags>
         <tag>photo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[post-layui-upload]]></title>
+    <url>%2F2018%2F11%2F05%2Fpost-layui-upload%2F</url>
+    <content type="text"><![CDATA[layui多文件上传的时候，其实并没有一次全部提交，而是逐个文件上上传。以下是文件上传的代码实现，每次选择文件时，在上传前能预览本地图片，点击绑定按钮再发送请求上传文件。 //layui目前版本上传每个文件都要发送一次请求//设置变量累加每次请求返回的数据,统一做后续处理var resultData = new Array();function initUpload() &#123; layui.use(['upload'], function () &#123; var upload = layui.upload,layer = layui.layer; var seqNo = $('#attachedSeq').val(); var url = '/ecm/anon/uploadFile/' + seqNo; var uploadInst = upload.render(&#123; elem: '#drapUpload', url: url, accept: 'file', size: 100 * 1024, //限制文件大小，单位 KB multiple: true, //允许多文件上传 auto: false, //选完文件后不要自动上传 bindAction: '#doUpload', //指定一个按钮触发上传 choose: function (obj) &#123; var files = this.files = obj.pushFile();//将每次选择的文件追加到文件队列 //图像预览，如果是多文件，会逐个添加。(不支持ie8/9) obj.preview(function(index, file, result)&#123; if (files.size &gt; 0 &amp;&amp; $('#div_prev').find('img').length === 0) &#123; $('#div_prev').empty(); &#125; // 添加图片 ImgPreview-预览的dom元素的id $('#div_prev').append('&lt;div class="image-container" id="container'+index+'"&gt;' + '&lt;div style="dispaly:inline-block" class="delete-css"&gt;' + '&lt;button id="upload_img_'+index+'" class="layui-btn layui-btn-danger layui-btn-xs"&gt;删除&lt;/button&gt;&lt;/div&gt;' + '&lt;img id="showImg'+index+'" style="width: 150px;height: 98px; margin:10px;cursor:pointer;"src="' + result + '" alt="' + file.name + '"&gt;&lt;/div&gt;'); //删除某图片 $("#upload_img_" + index).bind('click', function () &#123; delete files[index]; $("#container"+index).remove(); &#125;); //某图片放大预览 $("#showImg"+index).bind('click',function () &#123; var width = $("#showImg"+index).width(); var height = $("#showImg"+index).height(); var scaleWH = width/height; var bigH = 600; var bigW = scaleWH*bigH; if(bigW&gt;900)&#123; bigW = 900; bigH = bigW/scaleWH; &#125; // 放大预览图片 layer.open(&#123; type: 1, title: false, closeBtn: 1, shadeClose: true, area: [800 + 'px', 400 + 'px'], //宽高 content: "&lt;img width='"+bigW+"' height='"+bigH+"' src=" + result + " /&gt;" &#125;); &#125;); &#125;); &#125;, before: function (obj) &#123; //obj参数包含的信息，跟 choose回调完全一致，可参见上文。 &#125;, done: function (res, index, upload) &#123; layer.closeAll('loading'); var data = res.data; if (res.code == 1) &#123; for (var i = 0; i &lt; data.length; i++) &#123; resultData[resultData.length + i] = data[i]; &#125; &#125; /* $("#upload_img_" + index).trigger("click"); $("#container"+index).remove();*/ &#125;, allDone: function(obj)&#123; //当文件全部被提交后，才触发 layer.msg('上传成功'); setAttachedTable(resultData); resultData = [];//清空 /* console.log(obj.total); //得到总文件数 console.log(obj.successful); //请求成功的文件数 console.log(obj.aborted); //请求失败的文件数*/ &#125; ,error: function () &#123; layer.msg('上传失败'); layer.closeAll('loading'); &#125; &#125;); &#125;);&#125;]]></content>
+      <categories>
+        <category>code</category>
+      </categories>
+      <tags>
+        <tag>code</tag>
       </tags>
   </entry>
   <entry>
@@ -28,19 +39,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[photo-mydaylis]]></title>
-    <url>%2F2018%2F11%2F05%2Fphoto-mydaylis%2F</url>
-    <content type="text"><![CDATA[]]></content>
-      <categories>
-        <category>photo</category>
-      </categories>
-      <tags>
-        <tag>photo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[大学时期的一些留念]]></title>
-    <url>%2F2018%2F11%2F04%2Fphonto-2018-11-11-4%2F</url>
+    <url>%2F2018%2F11%2F04%2Fphonto-school%2F</url>
     <content type="text"><![CDATA[拾 忆一些值得留念的大学照片 班级: 软件工程2013级135班级小伙伴们的合影 募捐: 萤火虫虽小，但它的尾部代表者希望柳州市五星街 科创： 大学生科技创新中心小伙伴们的合影 青协： 青年志愿者协会小伙伴们的合影, 有无数美好的回忆 徒步： 柳州桥的故事20公里徒步小伙伴们的合影 校运会: 每年一届的校运会小伙伴们的合影]]></content>
       <categories>
         <category>photo</category>
@@ -50,7 +50,7 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[some tips]]></title>
+    <title><![CDATA[without any reason]]></title>
     <url>%2F2018%2F11%2F02%2Fpost-colo%2F</url>
     <content type="text"><![CDATA[没有为什么的为什么 我以前超级喜欢喝可乐突然有一天我不喜欢喝了不喜欢就是不喜欢了我没有错可乐也没有错]]></content>
       <categories>
@@ -106,7 +106,7 @@
   </entry>
   <entry>
     <title><![CDATA[一些照片]]></title>
-    <url>%2F2018%2F07%2F31%2Fphonto-2018-10-11-1%2F</url>
+    <url>%2F2018%2F07%2F31%2Fphonto-someday%2F</url>
     <content type="text"><![CDATA[在二更的视频上看到的关于渔民新村的介绍，是广州的最后一个渔村。怀着一点好奇心去走一走，没想到是这个样…岸边些许鱼腥味…… 广州番禺莲花山，其实还不错, 50的门票还是值得的。]]></content>
       <categories>
         <category>photo</category>
@@ -117,8 +117,8 @@
   </entry>
   <entry>
     <title><![CDATA[夜空中最亮的星]]></title>
-    <url>%2F2018%2F07%2F29%2Fmusic-2018-11-1%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-EqCkmBTh"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+    <url>%2F2018%2F07%2F29%2Fmusic-yekong%2F</url>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-hFDHHNaC"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
       <categories>
         <category>music</category>
       </categories>
