@@ -12,7 +12,29 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[post-layui-upload]]></title>
+    <title><![CDATA[家里的八卦钟]]></title>
+    <url>%2F2018%2F11%2F05%2Fpost-alarm-clock%2F</url>
+    <content type="text"><![CDATA[“叮咚.叮咚..叮咚…”躺在长长的座椅上，眯眼午憩。这是墙上挂着的八卦钟发出的细腻清脆的声音。只有半睡眠，四周宁静，才听得清楚。想起这老东西已经走了40年了，听说1978年买的，当初花了7块钱买的。当初刚刚从茅草房子到盖了泥砖瓦房，新添了这东西。这老东西就是耐操，从旧房子到新房子，再从新房子到旧房子，它依然在走。期间换过几个电子挂钟，没用多久就坏了，还要老换电池。那看东西硬是没坏过，一停，给它加上链就可以了，像小时候的玩具车，扭几下能跑一下，这货扭几下能跑半个月(上面印了3个5，还标了15天的字样)。它还有闹钟的功能，铛.铛..铛…十分锐耳响亮，以前住泥砖瓦房的时候，基本在用闹钟，现在就不用了。以前的房子氛围跟这声音很搭，现在的房子倒觉得不太和谐了。不懂是不是习惯了在那样的环境下特有的感觉。夏夜，夜虫鸣伴着钟摆的声音，催眠曲。那年仲夏，午夜起床撒尿，见啊爷坐在躺椅上看电视，我问几点了，他说两点，我说还有多久天亮，他指了指八卦钟，短的那根指针指到那个位置就天亮了。那时候开始，才知道夜有多长，用指针跑了多长，衡量夜大概有多长。除了镜面老化，不知道什么时候自己裂开已外，没有什么破烂的地方。啊婆曾催啊爷买一块镜换掉坏了的镜，但是一直没买，直到爷爷去世，估计是忘了，现在只是用透明胶粘着，能看清楚就可以了(现在想买估计也买不到了吧！)。最终我们摒弃了电子钟，重新挂上它。估计它还能走十几年吧！刚刚买的时候，是开始可以买奖那一年，福利彩票还是什么鬼，不知道。啊爷被人调侃，买这东西要缴税咯！ 时间在变，老钟还在走，钟摆的声音没变，一直都没变，但愿还能跑几十年！]]></content>
+      <categories>
+        <category>me</category>
+      </categories>
+      <tags>
+        <tag>me</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java中的接口]]></title>
+    <url>%2F2018%2F11%2F05%2Fpost-interface-whatis%2F</url>
+    <content type="text"><![CDATA[这个我在知乎上偶然看到的问答，，，哈哈哈哈，，，简单粗暴 原因就在于，接口这个翻译太二逼了。。。其实就是协议。。。协议双方根据协议内容工作我有一个方法，需要一个参数，这个参数是某个类的对象，我们要调用这个参数的fuck方法让他干起来。void ml(Animal a)&#123;a.fuckMe();&#125; 如果这个动物对象a，没有fuckME函数，会发生什么。。。。。。程序根本通不过编译。 所以此时需要一个接口interface Fuckable&#123;void fuckMe():&#125;void ml(Fuckable a)&#123;a.fuckMe();&#125; 我要求传入进来的必须是有fuckme方法的，要不然我这个函数体就失败了。按理来说可以在文档里面说明，但是万一有个二逼传入进来一条母狗，母猩猩，女螃蟹，我咋办，下得去手吗？所以我强制规定，必须是能草的！！什么是能草的呢？这就是实现这个接口的。。只要你实现了这个Fuckable 接口，就必须实现fuckMe方法。要不就报错。你想要让我草，你就实现这个接口，你就要实现fuckme方法。如果你实现了，当你传入进来后，我不管你是人是兽是水壶,ok，你实现这个接口了，意味着你一定有fuckme方法，那我就可以继续了。。。所以接口就是协议。调用者和被调用者之间的协议。。当你调用者要求被调用的必须能做某些时，你就用接口。。接口也意味着想有资格被调用，就要实现规定好的方法。。 接口也有泛化的意思也就是说让一个类成员可以是多个对象。举个例子一个成员Dog d = new Dog 好了，以后这个成员没法变了，就是Dog了。 但是如果用接口Animal a那么传入什么都行，只要实现接口，也就是说只要具有我跟你协定好的功能就能来。。易于扩展。。新的功能，只要实现了这个接口就行。 class 网民 &#123;public void 上网 (能上网的 东西) &#123; 东西.上网(); &#125;&#125; 那么当你使用这个类的时候，你可以给它一部电脑，也可以给一台ipad。如果你把”能上网“这个接口变成某一个类的方法，那网民类就要改写：class 网民 &#123;public void 用电脑上网 (电脑) &#123; 电脑.上网(); &#125;public void 用iPad上网 (iPad) &#123; iPad.上网(); &#125;&#125; 忽然有一天，智能家居出现了，你发现家里的电视也能上网了，你就不得不更改”网民“类，加入另一个方法好让它能使用电视上网。 你能问出这个问题是因为你没有设计API的经验，如果”网民“类是在一个API中，你就不能随意更改了，于是导致了即便出现了能上网的电视，网民还是无法使用的情况。 作者：知乎用户链接：https://www.zhihu.com/question/20111251/answer/30093183来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Layui 多文件上传]]></title>
     <url>%2F2018%2F11%2F05%2Fpost-layui-upload%2F</url>
     <content type="text"><![CDATA[layui多文件上传的时候，其实并没有一次全部提交，而是逐个文件上上传。以下是文件上传的代码实现，每次选择文件时，在上传前能预览本地图片，点击绑定按钮再发送请求上传文件。 //layui目前版本上传每个文件都要发送一次请求//设置变量累加每次请求返回的数据,统一做后续处理var resultData = new Array();function initUpload() &#123; layui.use(['upload'], function () &#123; var upload = layui.upload,layer = layui.layer; var seqNo = $('#attachedSeq').val(); var url = '/ecm/anon/uploadFile/' + seqNo; var uploadInst = upload.render(&#123; elem: '#drapUpload', url: url, accept: 'file', size: 100 * 1024, //限制文件大小，单位 KB multiple: true, //允许多文件上传 auto: false, //选完文件后不要自动上传 bindAction: '#doUpload', //指定一个按钮触发上传 choose: function (obj) &#123; var files = this.files = obj.pushFile();//将每次选择的文件追加到文件队列 //图像预览，如果是多文件，会逐个添加。(不支持ie8/9) obj.preview(function(index, file, result)&#123; if (files.size &gt; 0 &amp;&amp; $('#div_prev').find('img').length === 0) &#123; $('#div_prev').empty(); &#125; // 添加图片 ImgPreview-预览的dom元素的id $('#div_prev').append('&lt;div class="image-container" id="container'+index+'"&gt;' + '&lt;div style="dispaly:inline-block" class="delete-css"&gt;' + '&lt;button id="upload_img_'+index+'" class="layui-btn layui-btn-danger layui-btn-xs"&gt;删除&lt;/button&gt;&lt;/div&gt;' + '&lt;img id="showImg'+index+'" style="width: 150px;height: 98px; margin:10px;cursor:pointer;"src="' + result + '" alt="' + file.name + '"&gt;&lt;/div&gt;'); //删除某图片 $("#upload_img_" + index).bind('click', function () &#123; delete files[index]; $("#container"+index).remove(); &#125;); //某图片放大预览 $("#showImg"+index).bind('click',function () &#123; var width = $("#showImg"+index).width(); var height = $("#showImg"+index).height(); var scaleWH = width/height; var bigH = 600; var bigW = scaleWH*bigH; if(bigW&gt;900)&#123; bigW = 900; bigH = bigW/scaleWH; &#125; // 放大预览图片 layer.open(&#123; type: 1, title: false, closeBtn: 1, shadeClose: true, area: [800 + 'px', 400 + 'px'], //宽高 content: "&lt;img width='"+bigW+"' height='"+bigH+"' src=" + result + " /&gt;" &#125;); &#125;); &#125;); &#125;, before: function (obj) &#123; //obj参数包含的信息，跟 choose回调完全一致，可参见上文。 &#125;, done: function (res, index, upload) &#123; layer.closeAll('loading'); var data = res.data; if (res.code == 1) &#123; for (var i = 0; i &lt; data.length; i++) &#123; resultData[resultData.length + i] = data[i]; &#125; &#125; /* $("#upload_img_" + index).trigger("click"); $("#container"+index).remove();*/ &#125;, allDone: function(obj)&#123; //当文件全部被提交后，才触发 layer.msg('上传成功'); setAttachedTable(resultData); resultData = [];//清空 /* console.log(obj.total); //得到总文件数 console.log(obj.successful); //请求成功的文件数 console.log(obj.aborted); //请求失败的文件数*/ &#125; ,error: function () &#123; layer.msg('上传失败'); layer.closeAll('loading'); &#125; &#125;); &#125;);&#125;]]></content>
       <categories>
@@ -23,7 +45,7 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[post-generator-random-pic]]></title>
+    <title><![CDATA[获取随机图]]></title>
     <url>%2F2018%2F11%2F05%2Fpost-generator-random-pic%2F</url>
     <content type="text"><![CDATA[突然发现一个可以获取随机图片的网站: Unsplash Source最简单的使用： https://source.unsplash.com/random/ + 图片规格例如： https://source.unsplash.com/random/800x600这样，页面每次刷新都是不同的随机图片]]></content>
   </entry>
@@ -118,7 +140,7 @@
   <entry>
     <title><![CDATA[夜空中最亮的星]]></title>
     <url>%2F2018%2F07%2F29%2Fmusic-yekong%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-hFDHHNaC"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-sLptptcA"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
       <categories>
         <category>music</category>
       </categories>
@@ -206,7 +228,7 @@
   <entry>
     <title><![CDATA[愿你三冬暖，愿你春不寒]]></title>
     <url>%2F2018%2F07%2F01%2Fpost-little-poems%2F</url>
-    <content type="text"><![CDATA[愿你三冬暖，愿你春不寒 愿你三冬暖，愿你春不寒；愿你天黑有灯，下雨有伞。愿你路上有良人相伴，愿你所有快乐无需假装，愿你此生尽兴、赤诚善良。愿时光能缓，愿故人不散；愿有人陪你颠沛流离，愿你惦念的人能和你道早安，愿你独闯的日子里不觉得孤单。愿你人间走一遭，圆满了三界六道，看透了是非善恶；从此福来心至，皆是逍遥。 note danger, note danger, note dangernote danger, note danger, note dangernote danger, note danger, note danger note danger, note danger, note dangernote danger, note danger, note dangernote danger, note danger, note danger note danger, note danger, note dangernote danger, note danger, note dangernote danger, note danger, note danger note danger, note danger, note dangernote danger, note danger, note dangernote danger, note danger, note danger note danger, note danger, note dangernote danger, note danger, note dangernote danger, note danger, note danger note danger, note danger, note dangernote danger, note danger, note dangernote danger, note danger, note danger default primary success info warning danger 点击下载百度 选项卡 1选项卡 2选项卡 3这是选项卡 1 呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈……这是选项卡 2这是选项卡 3 哇，你找到我了！φ(≧ω≦*)♪～ (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"https://yixiuer.oss-cn-shanghai.aliyuncs.com/videos/a-little-gecko-come-suddenly-1.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[愿你三冬暖，愿你春不寒 愿你三冬暖，愿你春不寒；愿你天黑有灯，下雨有伞。愿你路上有良人相伴，愿你所有快乐无需假装，愿你此生尽兴、赤诚善良。愿时光能缓，愿故人不散；愿有人陪你颠沛流离，愿你惦念的人能和你道早安，愿你独闯的日子里不觉得孤单。愿你人间走一遭，圆满了三界六道，看透了是非善恶；从此福来心至，皆是逍遥。 note danger, note danger, note dangernote danger, note danger, note dangernote danger, note danger, note danger note danger, note danger, note dangernote danger, note danger, note dangernote danger, note danger, note danger note danger, note danger, note dangernote danger, note danger, note dangernote danger, note danger, note danger note danger, note danger, note dangernote danger, note danger, note dangernote danger, note danger, note danger note danger, note danger, note dangernote danger, note danger, note dangernote danger, note danger, note danger note danger, note danger, note dangernote danger, note danger, note dangernote danger, note danger, note danger default primary success info warning danger 点击下载百度 选项卡 1选项卡 2选项卡 3这是选项卡 1 呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈呵呵哈哈哈哈哈哈哈哈……这是选项卡 2这是选项卡 3 哇，你找到我了！φ(≧ω≦*)♪～]]></content>
       <categories>
         <category>me</category>
       </categories>
