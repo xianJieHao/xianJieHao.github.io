@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[致某个让我爱慕而没能再靠近的人]]></title>
     <url>%2F2018%2F11%2F09%2Fpost-big%2F</url>
-    <content type="text"><![CDATA[已经很久没有见你了，准确的说，不知道以什么理由联系你…… 明明就在身边，却找不到之前那种给你发个微信都可以毫无顾虑，甚至不分时间段的感觉了…… 我不知道这算不算故事。。。或者至少在你眼中应该不算，，，只是再正常不过的普通朋友关系…… 那天我发了神经一样冲动发微信跟你表白，说我喜欢你三年，然后，内心小鹿乱撞，心扑通扑通的跳动，我知道这种感觉，是很多年没有出现的，类似高考那两天的午睡前的心跳。完后我一下钻进我被子，害怕结果又害怕不知道结果。这是得到肯定结果的概率接近为零的举动。我几乎没干过心理完全没有底的事情，可是，如果这种冲动能控制，要心有何用。我记得你是毫无延迟的回了一句，“如果拒绝呢，我们还没一起玩吗？”。我大概明白这就是你最直接的回答。或者你在此之前已经想过这个答案，只不过只要我一问，你就能直接不费力气思考的回答上来了。 那一瞬间，我的心态已经奔溃，似乎在预料之中又好似预料之外。我心中一股落寞与不甘心，输了个字母gun,但是冷静冷静，删掉。差点发了出去。那一刻甚至想，如果我从来没有认识你该好，宁愿从来没有认识过你，从来。]]></content>
+    <content type="text"><![CDATA[已经很久没有见你了，准确的说，不知道以什么理由联系你……明明就在身边，却找不到之前那种给你发个微信都可以毫无顾虑，甚至不分时间段的感觉了……我不知道这算不算故事。。。或者至少在你眼中应该不算，，，只是再正常不过的普通朋友关系…… 那天我发了神经一样冲动发微信跟你表白，说我喜欢你三年，然后，内心小鹿乱撞，心扑通扑通的跳动，我知道这种感觉，是很多年没有出现的，类似高考那两天的午睡前的心跳。完后我一下钻进我被子，害怕结果又害怕不知道结果。这是得到肯定结果的概率接近为零的举动。我几乎没干过心理完全没有底的事情，可是，如果这种冲动能控制，要心有何用。我记得你是毫无延迟的回了一句，“如果拒绝呢，我们还没一起玩吗？”。我大概明白这就是你最直接的回答。或者你在此之前已经想过这个答案，只不过只要我一问，你就能直接不费力气思考的回答上来了。 那一瞬间，我的心态已经奔溃，似乎在预料之中又好似预料之外。我心中一股落寞与不甘心，输了个字母gun,但是冷静冷静，删掉。差点发了出去。那一刻甚至想，如果我从来没有认识你该好，宁愿从来没有认识过你，从来。]]></content>
       <categories>
         <category>me</category>
       </categories>
@@ -173,7 +173,7 @@
   <entry>
     <title><![CDATA[夜空中最亮的星]]></title>
     <url>%2F2018%2F07%2F29%2Fmusic-yekong%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-ARkfDmMo"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-gYaIdtrg"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
       <categories>
         <category>music</category>
       </categories>
