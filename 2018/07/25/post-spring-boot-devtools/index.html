@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-CN">
+<html class="theme-next pisces use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -103,7 +103,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '6.3.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
@@ -135,12 +135,12 @@
 <meta property="og:site_name" content="Mr.冼 (ง •̀_•́)ง┻━┻">
 <meta property="og:description" content="spring-boot-devtools 是一个为开发者服务的一个模块，其中最重要的功能就是热部署。当我们修改了classpath下的文件（包括类文件、属性文件、页面等）时，会重新启动应用（由于其采用的双类加载器机制，这个启动会非常快，另外也可以选择使用jrebel）。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://unsplash.it/800/494/?random=1541725661">
-<meta property="og:updated_time" content="2018-11-09T01:07:47.645Z">
+<meta property="og:image" content="https://unsplash.it/1000/618/?random=1541725661">
+<meta property="og:updated_time" content="2018-11-10T16:13:06.205Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spring Boot热部署：spring-boot-devtools">
 <meta name="twitter:description" content="spring-boot-devtools 是一个为开发者服务的一个模块，其中最重要的功能就是热部署。当我们修改了classpath下的文件（包括类文件、属性文件、页面等）时，会重新启动应用（由于其采用的双类加载器机制，这个启动会非常快，另外也可以选择使用jrebel）。">
-<meta name="twitter:image" content="https://unsplash.it/800/494/?random=1541725661">
+<meta name="twitter:image" content="https://unsplash.it/1000/618/?random=1541725661">
 
 
 
@@ -304,9 +304,6 @@
   
 
   
-    
-
-  
 
   
     <div class="site-search">
@@ -349,6 +346,9 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
           
           <div id="content" class="content">
             
@@ -428,7 +428,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-09 09:07:47" itemprop="dateModified" datetime="2018-11-09T09:07:47+08:00">2018-11-09</time>
+                <time title="修改时间：2018-11-11 00:13:06" itemprop="dateModified" datetime="2018-11-11T00:13:06+08:00">2018-11-11</time>
               
             
           </span>
@@ -528,7 +528,7 @@
       
 
       
-        <p><img src="https://unsplash.it/800/494/?random=1541725661" alt="随机图"></p>
+        <span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="https://unsplash.it/1000/618/?random=1541725661" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
 <p>spring-boot-devtools 是一个为开发者服务的一个模块，其中最重要的功能就是热部署。<br>当我们修改了classpath下的文件（包括类文件、属性文件、页面等）时，会重新启动应用（由于其采用的双类加载器机制，这个启动会非常快，另外也可以选择使用jrebel）。<br><a id="more"></a><br>spring-boot-devtools使用了两个类加载器来实现重启（restart）机制：</p>
 <p>base类加载器（base ClassLoader）, restart类加载器（restart ClassLoader）。</p>
 <p>base ClassLoader：用于加载不会改变的jar（eg.第三方依赖的jar）<br>restart ClassLoader：用于加载我们正在开发的jar（eg.整个项目里我们自己编写的类）。当应用重启后，原先的restart ClassLoader被丢掉、重新new一个restart ClassLoader来加载这些修改过的东西，而base ClassLoader却不需要动一下。这就是devtools重启速度快的原因。<br>使用devtools ,只需要添加其依赖即可 :</p>
@@ -657,7 +657,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-count">25</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -775,7 +775,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">199k</span>
+    <span title="站点总字数">198k</span>
   
 
   
@@ -903,6 +903,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
