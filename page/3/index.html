@@ -429,7 +429,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-23 11:23:28" itemprop="dateModified" datetime="2018-11-23T11:23:28+08:00">2018-11-23</time>
+                <time title="修改时间：2018-12-10 12:01:33" itemprop="dateModified" datetime="2018-12-10T12:01:33+08:00">2018-12-10</time>
               
             
           </span>
@@ -495,7 +495,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">929</span>
+                <span title="本文字数">915</span>
               
 
               
@@ -530,11 +530,228 @@
 
       
         
-          <span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="https://unsplash.it/800/494/?random=1541725070" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-<p>使用js处理cookie<br>
+          
+            <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> cookie_operation = (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> get = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>)</span>&#123; </span><br><span class="line">        <span class="keyword">var</span> arr,reg=<span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"(^| )"</span>+name+<span class="string">"=([^;]*)(;|$)"</span>);</span><br><span class="line">        <span class="keyword">if</span>(arr=<span class="built_in">document</span>.cookie.match(reg))&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">unescape</span>(arr[<span class="number">2</span>]); </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>; </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">var</span> del = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>) </span>&#123; </span><br><span class="line">        <span class="keyword">var</span> exp = <span class="keyword">new</span> <span class="built_in">Date</span>(); </span><br><span class="line">        exp.setTime(exp.getTime() - <span class="number">1</span>); </span><br><span class="line">        <span class="keyword">var</span> cval=getCookie(name); </span><br><span class="line">        <span class="keyword">if</span>(cval!=<span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="built_in">document</span>.cookie= name + <span class="string">"="</span>+cval+<span class="string">";expires="</span>+exp.toGMTString(); </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">var</span> set = <span class="function"><span class="keyword">function</span>(<span class="params">name,value</span>) </span>&#123; </span><br><span class="line">        <span class="keyword">var</span> Days = <span class="number">30</span>; </span><br><span class="line">        <span class="keyword">var</span> exp = <span class="keyword">new</span> <span class="built_in">Date</span>(); </span><br><span class="line">        exp.setTime(exp.getTime() + Days*<span class="number">24</span>*<span class="number">60</span>*<span class="number">60</span>*<span class="number">1000</span>); </span><br><span class="line">        <span class="built_in">document</span>.cookie = name + <span class="string">"="</span>+ <span class="built_in">escape</span> (value) + <span class="string">";expires="</span> + exp.toGMTString(); </span><br><span class="line">    &#125; </span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        set : set,</span><br><span class="line">        get : get,</span><br><span class="line">        del : del</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/38616/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xianJieHao">
+      <meta itemprop="description" content="一个夹在现实与理想中间行走的 Hello World">
+      <meta itemprop="image" content="https://page-pic.oss-cn-beijing.aliyuncs.com/hexo-pic/avator.jpg?x-oss-process=style/rule-1">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mr.冼 (ง •̀_•́)ง┻━┻">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/38616/" itemprop="url">
+                  失格
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-07-22 07:34:29" itemprop="dateCreated datePublished" datetime="2018-07-22T07:34:29+08:00">2018-07-22</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-12-10 11:52:09" itemprop="dateModified" datetime="2018-12-10T11:52:09+08:00">2018-12-10</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/inspire/" itemprop="url" rel="index"><span itemprop="name">inspire</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/38616/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/posts/38616/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/posts/38616/" class="leancloud_visitors" data-flag-title="失格">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">5.9k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">5 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>&emsp;&emsp;我今天要跟大家讲的其实就是人间社会的失格，是人种的退化，或者是我们以前常常讲的东亚病夫的状态，是我们在人生社会中生活着,如何变成了大同小异的闰土。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/posts/61964/#more" rel="contents">
+            <a class="btn" href="/posts/38616/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -653,7 +870,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-23 11:24:50" itemprop="dateModified" datetime="2018-11-23T11:24:50+08:00">2018-11-23</time>
+                <time title="修改时间：2018-12-10 11:53:45" itemprop="dateModified" datetime="2018-12-10T11:53:45+08:00">2018-12-10</time>
               
             
           </span>
@@ -754,9 +971,7 @@
 
       
         
-          <span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="https://unsplash.it/800/494/?random=1541725246" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-<blockquote>
-<p>&emsp;其实，时间就像金钱一样，你得学会投资时间。把时间投资在有价值有意义的地方，你就会有更多的时间。<br>
+          <p>&emsp;&emsp;其实，时间就像金钱一样，你得学会投资时间。把时间投资在有价值有意义的地方，你就会有更多的时间。<br>每个人都有同样多的时间，而有的人能够把时间用好，有的人则没有把时间用好。日积月累，人和人的差距就越来越大。而看似忙碌的我们似乎在这一年中也没有做太多事，尤其是让自己成长的事情。工作强度很大的情况下，更要找到时间来学习和提升自己，除了依靠短期的热情外，有没有什么好方法呢？<br>对此，左耳朵耗子在极客时间专栏中分享了自己的这些心得和方法，希望对你有帮助。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/posts/6768/#more" rel="contents">
@@ -878,7 +1093,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-13 09:32:15" itemprop="dateModified" datetime="2018-11-13T09:32:15+08:00">2018-11-13</time>
+                <time title="修改时间：2018-12-10 11:59:41" itemprop="dateModified" datetime="2018-12-10T11:59:41+08:00">2018-12-10</time>
               
             
           </span>
@@ -944,7 +1159,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">3.5k</span>
+                <span title="本文字数">3.2k</span>
               
 
               
@@ -979,8 +1194,7 @@
 
       
         
-          <span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="http://s2.sinaimg.cn/orignal/006CagVjzy7mnCDJYope1&690" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-<div id="page" style="display: none;"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;写点什么呢？总想写点什么又无从下手！窗外黑云压城，暗无天日，狂风暴雨即将袭来！每次看到这副景象，内心泛起阵阵涟漪。<br>
+          <p>&emsp;&emsp;写点什么呢？总想写点什么又无从下手！窗外黑云压城，暗无天日，狂风暴雨即将袭来！每次看到这副景象，内心泛起阵阵涟漪。<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/posts/50448/#more" rel="contents">
@@ -1102,7 +1316,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-23 11:24:18" itemprop="dateModified" datetime="2018-11-23T11:24:18+08:00">2018-11-23</time>
+                <time title="修改时间：2018-12-10 12:21:14" itemprop="dateModified" datetime="2018-12-10T12:21:14+08:00">2018-12-10</time>
               
             
           </span>
@@ -1203,9 +1417,8 @@
 
       
         
-          <span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="https://unsplash.it/800/494/?random=1541725636" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-<p>方法入参检测工具类 </p>
-<p>Web 应用在接受表单提交的数据后都需要对其进行合法性检查，如果表单数据不合法，请求将被驳回。类似的，当我们在编写类的方法时，也常常需要对方法入参进行合 法性检查，如果入参不符合要求，方法将通过抛出异常的方式拒绝后续处理。
+          <p>方法入参检测工具类 </p>
+<p>Web 应用在接受表单提交的数据后都需要对其进行合法性检查，如果表单数据不合法，请求将被驳回。类似的，当我们在编写类的方法时，也常常需要对方法入参进行合 法性检查，如果入参不符合要求，方法将通过抛出异常的方式拒绝后续处理。举一个例子：有一个根据文件名获取输入流的方法：InputStream getData(String file)，为了使方法能够成功执行，必须保证 file 入参不能为 null或空白字符，否则根本无须进行后继的处理。这时方法的编写者通常会在方法体的最前面编写一段对入参进行检测的代码，
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/posts/47078/#more" rel="contents">
@@ -1327,7 +1540,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-23 11:25:20" itemprop="dateModified" datetime="2018-11-23T11:25:20+08:00">2018-11-23</time>
+                <time title="修改时间：2018-12-10 11:49:37" itemprop="dateModified" datetime="2018-12-10T11:49:37+08:00">2018-12-10</time>
               
             
           </span>
@@ -1393,7 +1606,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">993</span>
+                <span title="本文字数">992</span>
               
 
               
@@ -1428,8 +1641,7 @@
 
       
         
-          <span itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject"><img itemprop="url image" src="https://unsplash.it/800/494/?random=1541725778" class="full-image"><meta itemprop="width" content="auto"><meta itemprop="height" content="auto"></span>
-<p>&emsp;进程（process）和线程（thread）是操作系统的基本概念，但是它们比较抽象，不容易掌握。<br>最近，我读到一篇材料，发现有一个很好的类比，可以把它们解释地清晰易懂。<br>
+          <p>&emsp;进程（process）和线程（thread）是操作系统的基本概念，但是它们比较抽象，不容易掌握。<br>最近，我读到一篇材料，发现有一个很好的类比，可以把它们解释地清晰易懂。<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/posts/4339/#more" rel="contents">
@@ -1747,7 +1959,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-count">27</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1865,7 +2077,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">200k</span>
+    <span title="站点总字数">201k</span>
   
 
   
@@ -1876,7 +2088,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">2:40</span>
+    <span title="站点阅读时长">2:41</span>
   
 </div>
 
