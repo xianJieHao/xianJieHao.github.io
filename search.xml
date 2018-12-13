@@ -189,7 +189,7 @@
   <entry>
     <title><![CDATA[夜空中最亮的星]]></title>
     <url>%2Fposts%2F22781%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-FOXOcSar"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-hGeylHtO"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
       <categories>
         <category>music</category>
       </categories>

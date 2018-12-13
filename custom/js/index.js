@@ -98,7 +98,7 @@ layui.use(['bodyTab','form','element','layer','jquery'],function(){
     })
 
 	//刷新后还原打开的窗口
-    if(cacheStr == "true") {
+/*   if(cacheStr == "true") {
         if (window.sessionStorage.getItem("menu") != null) {
             menu = JSON.parse(window.sessionStorage.getItem("menu"));
             curmenu = window.sessionStorage.getItem("curmenu");
@@ -137,7 +137,9 @@ layui.use(['bodyTab','form','element','layer','jquery'],function(){
 		window.sessionStorage.removeItem("menu");
 		window.sessionStorage.removeItem("curmenu");
 	}
+	*/
 })
+
 
 //打开新窗口
 function addTab(_this){

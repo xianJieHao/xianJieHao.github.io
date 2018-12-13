@@ -12,14 +12,14 @@ layui.config({
     flow.load({
         elem: '#Images', //流加载容器
         done: function(page, next){ //加载下一页
-            $.get("../../json/product.json",function(res){
+            $.get("../../json/led01.json",function(res){
                 //模拟插入
                 var imgList = [],data = res.data;
                 var maxPage = imgNums*page < data.length ? imgNums*page : data.length;
                 setTimeout(function(){
                     for(var i=imgNums*(page-1); i<maxPage; i++){
                         //imgList.push('<li><img layer-src="'+ data[i].src +'" src="'+ data[i].thumb +'" alt="'+data[i].alt+'"><div class="operate"><div class="check"><input type="checkbox" name="belle" lay-filter="choose" lay-skin="primary" title="'+data[i].alt+'"></div><i class="layui-icon img_del">&#xe640;</i></div></li>');
-						imgList.push('<li><a class="fancybox" href="'+ data[i].thumb +'" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="'+ data[i].thumb +'" alt="'+data[i].alt+'" /></a></li>');
+						imgList.push('<li><a class="fancybox" href="'+ data[i].src +'"  data-fancybox="images" title="'+data[i].alt+'"><img src="'+ data[i].thumb +'" alt="'+data[i].alt+'" /><div class="operate"><div class="check"><input type="checkbox" name="belle" lay-filter="choose" lay-skin="primary" title="'+data[i].alt+'"></div><i class="layui-icon img_del">&#xe640;</i></div></a></li>');
                     }
                     next(imgList.join(''), page < (data.length/imgNums));
                     form.render();
@@ -142,5 +142,13 @@ layui.config({
 })
 
 $(document).ready(function() {
-	$('.fancybox').fancybox();
+	$('[data-fancybox="images"]').fancybox({
+	  thumbs : {
+		autoStart : true
+	  },
+	  buttons : [
+		'zoom',
+		'close'
+	  ]
+	});
 })
