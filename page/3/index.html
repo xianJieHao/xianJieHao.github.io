@@ -366,7 +366,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/38616/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/3667/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xianJieHao">
@@ -385,8 +385,8 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/posts/38616/" itemprop="url">
-                  失格
+                <a class="post-title-link" href="/posts/3667/" itemprop="url">
+                  Spring Boot热部署：spring-boot-devtools
                 </a>
               
             
@@ -412,7 +412,7 @@
                 
               
 
-              <time title="创建时间：2018-07-22 07:34:29" itemprop="dateCreated datePublished" datetime="2018-07-22T07:34:29+08:00">2018-07-22</time>
+              <time title="创建时间：2018-07-25 15:48:47" itemprop="dateCreated datePublished" datetime="2018-07-25T15:48:47+08:00">2018-07-25</time>
             
 
             
@@ -429,7 +429,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-12-10 11:52:09" itemprop="dateModified" datetime="2018-12-10T11:52:09+08:00">2018-12-10</time>
+                <time title="修改时间：2018-12-10 12:00:32" itemprop="dateModified" datetime="2018-12-10T12:00:32+08:00">2018-12-10</time>
               
             
           </span>
@@ -446,7 +446,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/inspire/" itemprop="url" rel="index"><span itemprop="name">inspire</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/spring/" itemprop="url" rel="index"><span itemprop="name">spring</span></a></span>
 
                 
                 
@@ -461,8 +461,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/posts/38616/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/posts/38616/" itemprop="commentCount"></span>
+                <a href="/posts/3667/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/posts/3667/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -470,7 +470,7 @@
 
           
           
-             <span id="/posts/38616/" class="leancloud_visitors" data-flag-title="失格">
+             <span id="/posts/3667/" class="leancloud_visitors" data-flag-title="Spring Boot热部署：spring-boot-devtools">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -495,7 +495,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">5.9k</span>
+                <span title="本文字数">3.7k</span>
               
 
               
@@ -509,7 +509,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">5 分钟</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -530,10 +530,10 @@
 
       
         
-          <p>&emsp;&emsp;我今天要跟大家讲的其实就是人间社会的失格，是人种的退化，或者是我们以前常常讲的东亚病夫的状态，是我们在人生社会中生活着,如何变成了大同小异的闰土。<br>
+          <p>spring-boot-devtools 是一个为开发者服务的一个模块，其中最重要的功能就是热部署。<br>当我们修改了classpath下的文件（包括类文件、属性文件、页面等）时，会重新启动应用（由于其采用的双类加载器机制，这个启动会非常快，另外也可以选择使用jrebel）。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/posts/38616/#more" rel="contents">
+            <a class="btn" href="/posts/3667/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -756,6 +756,229 @@
           
             <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> cookie_operation = (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> get = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>)</span>&#123; </span><br><span class="line">        <span class="keyword">var</span> arr,reg=<span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"(^| )"</span>+name+<span class="string">"=([^;]*)(;|$)"</span>);</span><br><span class="line">        <span class="keyword">if</span>(arr=<span class="built_in">document</span>.cookie.match(reg))&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">unescape</span>(arr[<span class="number">2</span>]); </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>; </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">var</span> del = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>) </span>&#123; </span><br><span class="line">        <span class="keyword">var</span> exp = <span class="keyword">new</span> <span class="built_in">Date</span>(); </span><br><span class="line">        exp.setTime(exp.getTime() - <span class="number">1</span>); </span><br><span class="line">        <span class="keyword">var</span> cval=getCookie(name); </span><br><span class="line">        <span class="keyword">if</span>(cval!=<span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="built_in">document</span>.cookie= name + <span class="string">"="</span>+cval+<span class="string">";expires="</span>+exp.toGMTString(); </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">var</span> set = <span class="function"><span class="keyword">function</span>(<span class="params">name,value</span>) </span>&#123; </span><br><span class="line">        <span class="keyword">var</span> Days = <span class="number">30</span>; </span><br><span class="line">        <span class="keyword">var</span> exp = <span class="keyword">new</span> <span class="built_in">Date</span>(); </span><br><span class="line">        exp.setTime(exp.getTime() + Days*<span class="number">24</span>*<span class="number">60</span>*<span class="number">60</span>*<span class="number">1000</span>); </span><br><span class="line">        <span class="built_in">document</span>.cookie = name + <span class="string">"="</span>+ <span class="built_in">escape</span> (value) + <span class="string">";expires="</span> + exp.toGMTString(); </span><br><span class="line">    &#125; </span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        set : set,</span><br><span class="line">        get : get,</span><br><span class="line">        del : del</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
           
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/38616/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xianJieHao">
+      <meta itemprop="description" content="一个夹在现实与理想中间行走的 Hello World">
+      <meta itemprop="image" content="https://page-pic.oss-cn-beijing.aliyuncs.com/hexo-pic/avator.jpg?x-oss-process=style/rule-1">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mr.冼 (ง •̀_•́)ง┻━┻">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/38616/" itemprop="url">
+                  失格
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-07-22 07:34:29" itemprop="dateCreated datePublished" datetime="2018-07-22T07:34:29+08:00">2018-07-22</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-12-10 11:52:09" itemprop="dateModified" datetime="2018-12-10T11:52:09+08:00">2018-12-10</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/inspire/" itemprop="url" rel="index"><span itemprop="name">inspire</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/38616/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/posts/38616/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/posts/38616/" class="leancloud_visitors" data-flag-title="失格">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">5.9k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">5 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>&emsp;&emsp;我今天要跟大家讲的其实就是人间社会的失格，是人种的退化，或者是我们以前常常讲的东亚病夫的状态，是我们在人生社会中生活着,如何变成了大同小异的闰土。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/38616/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1959,7 +2182,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">27</span>
+                    <span class="site-state-item-count">28</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2077,7 +2300,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">201k</span>
+    <span title="站点总字数">202k</span>
   
 
   
@@ -2088,7 +2311,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">2:41</span>
+    <span title="站点阅读时长">2:42</span>
   
 </div>
 
