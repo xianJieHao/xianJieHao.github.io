@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[个人简历]]></title>
     <url>%2Fposts%2F53088%2F</url>
-    <content type="text"><![CDATA[个人简历 联系方式 手机：18620463578 Email：xianjiehao1253@sina.com QQ：925066365 个人信息 冼杰豪/男/1993 本科/广西科技大学/计算机科学与通信工程学院/软件工程 工作年限：2年 外语：CET-4 Github Page：https://xianjiehao.github.io/ 期望职位：JAVA开发程序员 期望薪资：税前月薪8k~10k，特别喜欢的公司可例外 期望城市：广州 工作经历四川中烟工业有限责任公司(2018年8月~2018年11月)四川中烟新闻推送系统基于Springboot构建的系统，提供数个RESTful接口给第三方系统推送新闻、公告、通知等信息，集成swagger接口测试，供给移动门户App调用。本人负责接口开发以及测试，手机端页面实现，协助驻场实施人员部署系统。 四川中烟在线坐席系统该系统提供四川中烟客服中心后台服务管理，实现对四川中烟客服中心、客服组、技能组、坐席、用户、工单任务等配置服务。本人处理工单任务模块，对各类咨询、建议、问题等远程会话处理的接入会话，进行工单记录，为四川中烟的业务咨询报表统计形成基础。支撑大区人员售后现场出勤，实现将web坐席客服接入的会话，按需分配到线下大区人员移动门户app，实现工单任务的派发。坐席能根据执行情况对工单进行回访和结案。实现技术：Layui + Springboot + mysql 贵州中烟责任有限公司(2018年5月~2018年7月)贵州中烟采购系统该系统主要是采购申请、采购订货、进料检验、仓库收料、采购退货、购货发票处理、供应商管理、价格及供货信息管理、订单管理，以及质量检验管理等功能综合运用的管理系统。本人负责项目搭建初期的数据入库部分工作。前端使用Layui设计界面，融合Ajax等前后端分离，后端采用主流springMVC，mybatis等主流框架，实现数据库系统基础数据的建表，数据入库的操作。 中国太平洋保险股份有限公司(2017年6月~2018年6月)深圳太平洋集团OA系统升级项目太平洋保险集团OA需要适配简繁英系统，将原本简体中文改成简繁英三种语言自由切换。本人主要负责将OA的系统管理模块实现国际化工作，利用i18N前端插件实现，及负责修改旧OA升级后系统出现的BUG。该系统是基于struct+spring实现。本人提出自定义属性添加到HTML标记的方案解决在老旧的JSP页面上通过javascript查找DOM节点的问题。 京华信息科技股份有限公司(2016年11月~2017年6月)门户网站项目主要维护各个地方项目门户网站以及BUG跟进修复，新功能扩展开发。比如广州发展集团门户网站搭建，本人负责在centos上部署环境，做JBOSS反向代理负载均衡,并且测试单点登陆。 相关技能 有扎实的Java基础，熟悉使用java进行面向对象程序设计，具有良好的注释和文档编写习惯 熟练掌握和应用目前流行开源框架(SpringBoot, SpringMVC, MyBatis等) 熟练掌握MySQL等关系型数据库的使用和开发，了解redis等内存型数据库 熟悉Linux(如Centos)系统，能够独立部署项目，熟悉tomcat，jboss等web服务器 熟悉Html、Css、Bootstrap、JQuery、AJAX、LayUI等前端技术 了解JVM，包括内存模型、类加载机制以及性能优化 自我评价 动手能力强、善于思考和理解，大三时期，担任校科创中心网络技术部部长期间，通过网站自学相关知识，负责网站维护。捣鼓过各种博客系统，wordpress，typecho，jekyll，Hexo。 性格沉稳，处事认真，具有良好的沟通能协调能力，大学期间担任院青协会长，代班，获得过校优秀青年志愿者称号，工作后跟同事关系融洽，常一起打篮球或者户外活动，能快速融入团队协作。 善于利用网络资源，学生时期曾在慕课网看视频教学，现在常看科技类、理财类youtuber的视频，国内的数字尾巴、爱范儿等网站，广泛涉猎。 时间观念强烈，两年工作无迟到早退记录，按时完成组长分配任务，轻微代码洁癖。 致谢感谢您花时间阅读我的简历，期待能有机会和您共事。]]></content>
+    <content type="text"><![CDATA[个人简历 联系方式 手机：18620463578 Email：xianjiehao1253@sina.com QQ：925066365 个人信息 冼杰豪/男/1993 本科/广西科技大学/计算机科学与通信工程学院/软件工程 工作年限：2年 外语：CET-4 Github Page：https://xianjiehao.github.io/ 期望职位：JAVA开发工程师 期望城市：广州 工作经历四川中烟工业有限责任公司(2018年8月~2018年11月)四川中烟新闻推送系统基于Springboot构建的系统，提供数个RESTful接口给第三方系统推送新闻、公告、通知等信息，集成swagger接口测试，供给移动门户App调用。本人负责接口开发以及测试，手机端页面实现，协助驻场实施人员部署系统。 四川中烟在线坐席系统该系统提供四川中烟客服中心后台服务管理，实现对四川中烟客服中心、客服组、技能组、坐席、用户、工单任务等配置服务。本人处理工单任务模块，对各类咨询、建议、问题等远程会话处理的接入会话，进行工单记录，为四川中烟的业务咨询报表统计形成基础。支撑大区人员售后现场出勤，实现将web坐席客服接入的会话，按需分配到线下大区人员移动门户app，实现工单任务的派发。坐席能根据执行情况对工单进行回访和结案。实现技术：Layui + Springboot + mysql 贵州中烟责任有限公司(2018年5月~2018年7月)贵州中烟采购系统该系统主要是采购申请、采购订货、进料检验、仓库收料、采购退货、购货发票处理、供应商管理、价格及供货信息管理、订单管理，以及质量检验管理等功能综合运用的管理系统。本人负责项目搭建初期的数据入库部分工作。前端使用Layui设计界面，融合Ajax等前后端分离，后端采用主流springMVC，mybatis等主流框架，实现数据库系统基础数据的建表，数据入库的操作。 中国太平洋保险股份有限公司(2017年6月~2018年6月)深圳太平洋集团OA系统升级项目太平洋保险集团OA需要适配简繁英系统，将原本简体中文改成简繁英三种语言自由切换。本人主要负责将OA的系统管理模块实现国际化工作，利用i18N前端插件实现，及负责修改旧OA升级后系统出现的BUG。该系统是基于struct+spring实现。本人提出自定义属性添加到HTML标记的方案解决在老旧的JSP页面上通过javascript查找DOM节点的问题。 京华信息科技股份有限公司(2016年11月~2017年6月)门户网站项目主要维护各个地方项目门户网站以及BUG跟进修复，新功能扩展开发。比如广州发展集团门户网站搭建，本人负责在centos上部署环境，做JBOSS反向代理负载均衡,并且测试单点登陆。 相关技能 有扎实的Java基础，熟悉使用java进行面向对象程序设计，具有良好的注释和文档编写习惯 熟练掌握和应用目前流行开源框架(SpringBoot, SpringMVC, MyBatis等) 熟练掌握MySQL等关系型数据库的使用和开发，了解redis等内存型数据库 熟悉Linux(如Centos)系统，能够独立部署项目，熟悉tomcat，jboss等web服务器 熟悉Html、Css、Bootstrap、JQuery、AJAX、LayUI等前端技术 了解JVM，包括内存模型、类加载机制以及性能优化 自我评价 动手能力强、善于思考和理解，大三时期，担任校科创中心网络技术部部长期间，通过网站自学相关知识，负责网站维护。捣鼓过各种博客系统，wordpress，typecho，jekyll，Hexo。 性格沉稳，处事认真，具有良好的沟通能协调能力，大学期间担任院青协会长，代班，获得过校优秀青年志愿者称号，工作后跟同事关系融洽，常一起打篮球或者户外活动，能快速融入团队协作。 善于利用网络资源，学生时期曾在慕课网看视频教学，现在常看科技类、理财类youtuber的视频，国内的数字尾巴、爱范儿等网站，广泛涉猎。 时间观念强烈，两年工作无迟到早退记录，按时完成组长分配任务，轻微代码洁癖。 致谢感谢您花时间阅读我的简历，期待能有机会和您共事。]]></content>
       <categories>
         <category>me</category>
       </categories>
@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[QX视频]]></title>
     <url>%2Fposts%2F46207%2F</url>
-    <content type="text"><![CDATA[测试一下放视频的网速怎么样~~~]]></content>
+    <content type="text"><![CDATA[当年的一丢丢回忆 ~~~ (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"http://vps.jiehao.me/video/qx.mp4","pic":"http://page-pic.oss-cn-beijing.aliyuncs.com/hexo-pic/post/school2018-11-4-8.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
   </entry>
   <entry>
     <title><![CDATA[Spring的发展]]></title>
@@ -226,7 +226,7 @@
   <entry>
     <title><![CDATA[夜空中最亮的星]]></title>
     <url>%2Fposts%2F22781%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-GYETBSTN"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-rkwURAti"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
       <categories>
         <category>music</category>
       </categories>
