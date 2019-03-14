@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[说再见]]></title>
+    <url>%2Fposts%2F54430%2F</url>
+    <content type="text"><![CDATA[我只会用我的方式跟你说再见~~“再见”这两个字可能在我心里酝酿很久了。只是缺一个合适的时间点跟你说。我不太擅长表述，以至于到现在为止没有对你在合适的时间有一个合理的表达。或许本该就如此！想来想去，轻微的总结一下从认识到熟悉。或者看到这里你已经感到不自在，你的性格就是这样。我从你身上看到我以往的影子，我该有的性格、价值观等等。对于你，初始的印象是好玩，爱玩，好笑，有趣，轻微神经质。近一步了解，内心成熟稳妥。尝试去解读关于你，但是始终读不懂的样子。尝试去走进你，好像也不行。你一直矗立在原地，我仿佛游走周围，时而跳跃时而平稳。你还是你，我还是我，两根平行线。原来一直是，我好像打扰了你。对不起，打扰了，再见！有缘再见。祝福你永远幸福开心，祝我永远也不知道！]]></content>
+      <categories>
+        <category>me</category>
+      </categories>
+      <tags>
+        <tag>me</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[个人简历]]></title>
     <url>%2Fposts%2F53088%2F</url>
     <content type="text"><![CDATA[个人简历 姓名手机： 186 邮箱： ********@sina.com QQ： **外语： CET-4 博客： http://www.jiehao.me/ 出生： 男/1993 个人经历2017/06 - 2018/12 京华信息科技股份有限公司 JAVA开发工程师 工作描述：企业开发部担任JAVA开发工程师，参与企业项目开发 2016/11 - 2017/06 京华信息科技股份有限公司 JAVA 开发实习生 工作描述：通用应用产品部担任JAVA开发实习生，负责门户网站维护以及参与新功能扩展开发 2013/09 - 2017/06 广西科技大学 本科/软件工程专业 学校经历：院青协会长、科创中心技术部长、代班，负责协助老师处理学生工作以及网站开发维护 专业技能 有扎实的Java基础，熟悉使用java进行面向对象程序设计，具有良好的注释和文档编写习惯 熟练掌握和应用目前流行开源框架(SpringBoot, SpringMVC, MyBatis等) 熟练掌握MySQL等关系型数据库的使用和开发，了解redis等内存型数据库 熟悉Linux(如Centos)系统，能够独立部署项目，熟悉tomcat，jboss等web服务器 熟悉Html、Css、Bootstrap、JQuery、AJAX、LayUI等前端技术 了解JVM，包括内存模型、类加载机制以及性能优化 项目经历 2018/10~2018/11 四川中烟工业有限公司 新闻推送系统 简介：基于Spring Boot构建的系统，提供数个RESTful接口给第三方系统推送新闻、公告、通知等信息，集成swagger接口测试，供给移动门户App调用 职责： 负责接口开发以及测试，手机端页面实现 协助驻场实施人员部署系统 2018/06 - 2018/10 四川中烟工业有限公司 在线坐席系统 简介：该系统提供四川中烟客服中心后台服务管理，实现对四川中烟客服中心、客服组、技能组、坐席、用户、工单任务等配置服务。该系统J2EE平台，B/S开发模式。采用Spring Boot作为整体项目框架。采用Vue、Layui前端框架，JQUERY,AJAX和CSS处理页面效果。 职责： 负责工单任务模块，对各类咨询、建议、问题等远程会话处理的接入会话，进行工单记录。 实现将web坐席客服接入的会话，按需分配到线下大区人员移动门户app，实现工单任务的派发。 实现坐席能根据执行情况对工单进行回访和结案的业务需求 2018/05 - 2018/07 贵州中烟工业有限公司 采购系统 简介：该系统主要是采购申请、采购订货、进料检验、仓库收料、采购退货、购货发票处理、供应商管理、价格及供货信息管理、订单管理，以及质量检验管理等功能综合运用的管理系统。该系统J2EE平台，B/S开发模式。采用Spring、SpringMVC、MyBatis作为整体项目框架,服务器使用webSphere，数据库采用DB2,前端框架采用Layui，结合JQUERY,AJAX和CSS处理页面效果。 职责： 负责项目搭建初期的基础数据表创建 前端页面实现 数据入库业务逻辑实现 2017/06 - 2018/06 深圳太平洋集团 OA系统 简介：公司OA平台为客户提供一套基础的软件设施，太平洋保险集团项目基于此公司产品原型做的二次开发。完成核心业务需求开发同时，系统需要适配简繁英系统，将原本简体中文改成简繁英三种语言自由切换，兼容各版本IE。该系统J2EE平台，B/S开发模式。采用Spring、Struct、iBatis作为整体项目框架,服务器使用weblogic，数据库采用Oracle,前端框架采用EasyUI，结合JQUERY,AJAX和CSS处理页面效果 职责： 主要负责将OA的系统管理模块实现多语言国际化工作，利用i18N前端插件实现 对系统进行多语言国际化测试 负责修改旧OA升级后系统出现的BUG 2016/11 - 2017/06 京华信息科技股份有限公司 门户项目 简介：ExPortal统一工作门户产品以统一用户中心、单点登录为基础，以界面集成、功能集成、数据集成为手段，集成客户所有的应用系统，借助内容管理和网站管理为客户提供统一的信息平台和工作平台。 职责： 新功能扩展开发 维护各个地方门户项目，对接驻场实施人员，修复反馈的BUG 自我评价 动手能力强、善于思考和理解，担任校科创中心技术部长期间，通过网站自学相关知识，负责网站维护。 性格沉稳，处事认真，具有良好的沟通能协调能力，在校期间当过学生干部，获得过校优秀青年志愿者称号，工作后跟同事关系融洽，常一起打篮球或者户外活动，能快速融入团队协作 善于利用网络资源，学生时期曾在慕课网看视频教学，现在常看科技类youtuber的视频，广泛涉猎 时间观念强烈，两年工作无迟到早退记录，按时完成组长分配任务，轻微代码洁癖 兴趣爱好打篮球、看科技电子产品相关新闻(数字尾巴、爱范儿等)、骑行、编程、摄影，捣鼓各种开源博客系统]]></content>
@@ -226,7 +237,7 @@
   <entry>
     <title><![CDATA[夜空中最亮的星]]></title>
     <url>%2Fposts%2F22781%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-FrRenEKP"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-ELeiBYBC"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
       <categories>
         <category>music</category>
       </categories>
