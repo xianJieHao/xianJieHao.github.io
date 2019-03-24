@@ -129,17 +129,18 @@
 
 
 
-  <meta name="description" content="知其然不,知其所以然">
+  <meta name="description" content="知其然，不知其所以然">
+<meta name="keywords" content="java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="面试总结">
 <meta property="og:url" content="http://yoursite.com/posts/42863/index.html">
 <meta property="og:site_name" content="Mr.冼 (ง •̀_•́)ง┻━┻">
-<meta property="og:description" content="知其然不,知其所以然">
+<meta property="og:description" content="知其然，不知其所以然">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-24T06:00:21.287Z">
+<meta property="og:updated_time" content="2019-03-24T13:56:51.334Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面试总结">
-<meta name="twitter:description" content="知其然不,知其所以然">
+<meta name="twitter:description" content="知其然，不知其所以然">
 
 
 
@@ -408,7 +409,7 @@
                 
               
 
-              <time title="创建时间：2019-03-24 13:48:54 / 修改时间：14:00:21" itemprop="dateCreated datePublished" datetime="2019-03-24T13:48:54+08:00">2019-03-24</time>
+              <time title="创建时间：2019-03-24 13:48:54 / 修改时间：21:56:51" itemprop="dateCreated datePublished" datetime="2019-03-24T13:48:54+08:00">2019-03-24</time>
             
 
             
@@ -418,6 +419,24 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -461,7 +480,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.5k</span>
+                <span title="本文字数">4.8k</span>
               
 
               
@@ -475,7 +494,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">2 分钟</span>
+                <span title="阅读时长">4 分钟</span>
               
             </div>
           
@@ -495,46 +514,37 @@
       
 
       
-        <p>知其然不,知其所以然<br><a id="more"></a></p>
-<ul>
-<li><p>规则的二维数组int[][] t ，写一个方法实现行变成列，列变成行。<br>public int[][] exchange(int[][] t){……}</p>
-</li>
-<li><p>forward和redirect的区别</p>
-</li>
-</ul>
-<p>forward（转发）：<br>是服务器请求资源,服务器直接访问目标地址的URL,把那个URL的响应内容读取过来,然后把这些内容再发给浏览器.浏览器根本不知道服务器发送的内容从哪里来的,因为这个跳转过程实在服务器实现的，并不是在客户端实现的所以客户端并不知道这个跳转动作，所以它的地址栏还是原来的地址.<br>redirect（重定向）：<br>是服务端根据逻辑,发送一个状态码,告诉浏览器重新去请求那个地址.所以地址栏显示的是新的URL.<br>转发是服务器行为，重定向是客户端行为。</p>
-<ul>
-<li>Interger 的值问题</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class demo03 &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Integer i = new Integer(300);</span><br><span class="line">        System.out.println(&quot;this is a mian mothed&quot;);</span><br><span class="line">         new demo03().test(i);</span><br><span class="line">         System.out.println(&quot;i == &quot;+i);</span><br><span class="line">    &#125;</span><br><span class="line">    public void test(Integer foo)&#123;</span><br><span class="line">        foo++;</span><br><span class="line">        System.out.println(&quot;foo == &quot;+foo);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>知其然，不知其所以然<br><a id="more"></a></p>
+<h4 id="规则的二维数组int-t-，写一个方法实现行变成列，列变成行。"><a href="#规则的二维数组int-t-，写一个方法实现行变成列，列变成行。" class="headerlink" title="规则的二维数组int[][] t ，写一个方法实现行变成列，列变成行。"></a>规则的二维数组int[][] t ，写一个方法实现行变成列，列变成行。</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public static int[][] exchange( int[][] t)&#123;</span><br><span class="line">    int rows = t.length;</span><br><span class="line">    int cols = t[0].length;</span><br><span class="line">    int[][] ct = new int[cols][rows];</span><br><span class="line">    for(int i=0;i&lt;rows;i++)&#123;</span><br><span class="line">       for(int j=0;j&lt;cols;j++)&#123;</span><br><span class="line">            ct[j][i] = t[i][j];</span><br><span class="line">       &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return ct;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="forward和redirect的区别"><a href="#forward和redirect的区别" class="headerlink" title="forward和redirect的区别"></a>forward和redirect的区别</h4><p>forward（转发）：<br>是服务器请求资源,服务器直接访问目标地址的URL,把那个URL的响应内容读取过来,然后把这些内容再发给浏览器.浏览器根本不知道服务器发送的内容从哪里来的,因为这个跳转过程实在服务器实现的，并不是在客户端实现的所以客户端并不知道这个跳转动作，所以它的地址栏还是原来的地址.<br>redirect（重定向）：<br>是服务端根据逻辑,发送一个状态码,告诉浏览器重新去请求那个地址.所以地址栏显示的是新的URL.<br>转发是服务器行为，重定向是客户端行为。</p>
+<h4 id="Interger-的值问题"><a href="#Interger-的值问题" class="headerlink" title="Interger 的值问题"></a>Interger 的值问题</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">public class demo03 &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Integer i = new Integer(300);</span><br><span class="line">        System.out.println(&quot;this is a mian mothed&quot;);</span><br><span class="line">         new demo03().test(i);</span><br><span class="line">         System.out.println(&quot;i == &quot;+i);</span><br><span class="line">    &#125;</span><br><span class="line">    public void test(Integer foo)&#123;</span><br><span class="line">        foo++;</span><br><span class="line">        System.out.println(&quot;foo == &quot;+foo);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>输出 0 1</p>
 <p>Integer 是引用传递  ,但是执行++是新建了一个对象，因为Integer 的value 是final的.<br>来包装类作为参数传递时，像是值传递。实际上不是</p>
-<ul>
-<li>Java中Vector和ArrayList的区别<br>首先看这两类都实现List接口，而List接口一共有三个实现类，分别是ArrayList、Vector和LinkedList。List用于存放多个元素，能够维护元素的次序，并且允许元素的重复。3个具体实现类的相关区别如下：</li>
-</ul>
+<h4 id="Java中Vector和ArrayList的区别"><a href="#Java中Vector和ArrayList的区别" class="headerlink" title="Java中Vector和ArrayList的区别"></a>Java中Vector和ArrayList的区别</h4><p>首先看这两类都实现List接口，而List接口一共有三个实现类，分别是ArrayList、Vector和LinkedList。List用于存放多个元素，能够维护元素的次序，并且允许元素的重复。3个具体实现类的相关区别如下：</p>
 <p>ArrayList是最常用的List实现类，内部是通过数组实现的，它允许对元素进行快速随机访问。数组的缺点是每个元素之间不能有间隔，当数组大小不满足时需要增加存储能力，就要讲已经有数组的数据复制到新的存储空间中。当从ArrayList的中间位置插入或者删除元素时，需要对数组进行复制、移动、代价比较高。因此，它适合随机查找和遍历，不适合插入和删除。<br>Vector与ArrayList一样，也是通过数组实现的，不同的是它支持线程的同步，即某一时刻只有一个线程能够写Vector，避免多线程同时写而引起的不一致性，但实现同步需要很高的花费，因此，访问它比访问ArrayList慢。<br>LinkedList是用链表结构存储数据的，很适合数据的动态插入和删除，随机访问和遍历速度比较慢。另外，他还提供了List接口中没有定义的方法，专门用于操作表头和表尾元素，可以当作堆栈、队列和双向队列使用。</p>
+<h4 id="新建线程"><a href="#新建线程" class="headerlink" title="新建线程"></a>新建线程</h4><p>1、继承Thread，重写run方法。执行start()<br>2、 实现Runnable接口的，重写run方法，新建Thread执行start()<br>3、匿名类方式重写run方法</p>
+<h4 id="SQL的优化问题，怎么优化？"><a href="#SQL的优化问题，怎么优化？" class="headerlink" title="SQL的优化问题，怎么优化？"></a>SQL的优化问题，怎么优化？</h4><p>a、表的设计合理（符合3NF）<br>b、添加适当索引(index)[四种: 普通索引、主键索引、唯一索引、全文索引] 复合索引<br>c、分表技术(水平分割、垂直分割)<br>d、读写分离<br>e、存储过程 [模块化编程，可以提高技术，但是迁移性不好]<br>f、对mysql配置优化 [ 配置最大并发数,调整缓存大小]<br>g、mysql 服务器硬件升级<br>h、定时的去清除不需要的数据, 定时进行碎片整理(MyISAM)</p>
+<h4 id="OSI模型："><a href="#OSI模型：" class="headerlink" title="OSI模型："></a>OSI模型：</h4><p>国际模型分为七层：<br>应用层、表示层、会话层、传输层、网络层、数据链路层、物理层<br>而实际应用为TCP/IP四层：<br>应用层、传输层、网络层、数据链路层<br>教科书为了方便，综合两者分成5层：<br>应用层、传输层、网络层、数据链路层、物理层。实际上三者是同一回事。</p>
+<h4 id="TCP跟UDP的区别是什么？"><a href="#TCP跟UDP的区别是什么？" class="headerlink" title="TCP跟UDP的区别是什么？"></a>TCP跟UDP的区别是什么？</h4><p>1、TCP是面向连接的，虽然说网络的不安全不稳定特性决定了多少次握手都不能保证连接的可靠性，但TCP的三次握手在最低限度上（实际上也很大程度上保证了）保证了连接的可靠性；<br>而UDP不是面向连接的，UDP传送数据前并不与对方建立连接，对接收到的数据也不发送确认信号，发送端不知道数据是否会正确接收，当然也不用重发，所以说UDP是无连接的、不可靠的一种数据传输协议。<br>2、也正由于1所说的特点，使得UDP的开销更小数据传输速率更高，因为不必进行收发数据的确认，所以UDP的实时性更好。</p>
+<h4 id="tcp-跟-ip-的区别？"><a href="#tcp-跟-ip-的区别？" class="headerlink" title="tcp 跟 ip 的区别？"></a>tcp 跟 ip 的区别？</h4><p>tcp是在传输层，ip是在网络层</p>
+<h4 id="事务-什么是事务-为何用事务？"><a href="#事务-什么是事务-为何用事务？" class="headerlink" title="事务, 什么是事务, 为何用事务？"></a>事务, 什么是事务, 为何用事务？</h4><p>事务是一组不可再分割的操作集合，保证数据的一致性和完整性。<br>事务特征：一致性，持久性，隔离性，原子性</p>
+<h4 id="面向切面-AOP-原理是什么-？"><a href="#面向切面-AOP-原理是什么-？" class="headerlink" title="面向切面(AOP),原理是什么 ？"></a>面向切面(AOP),原理是什么 ？</h4><p>JDK动态代理 和 CGLIB动态代理（没有实现接口的情况下）</p>
+<h4 id="两个项目之间如何通信-？"><a href="#两个项目之间如何通信-？" class="headerlink" title="两个项目之间如何通信 ？"></a>两个项目之间如何通信 ？</h4><p>a、RPC（远程过程调用）1.Thrift 2.Dubbo 3.Spring Cloud (基于http restful 接口)<br>b、消息中间件，apache kafka、rabbitmq等</p>
+<h4 id="碰到乱码怎么解决-utf-8和gbk可以直接转换么？"><a href="#碰到乱码怎么解决-utf-8和gbk可以直接转换么？" class="headerlink" title="碰到乱码怎么解决,utf-8和gbk可以直接转换么？"></a>碰到乱码怎么解决,utf-8和gbk可以直接转换么？</h4><p>比如，你从utf8格式的文件中使用gbk去读取一段字符，发现是乱码，那么你需要用重新使用gbk编码，再使用utf8读取。<br>（扩展：unicode 是字符集，一个编号(数字)到字符的一种映射关系，<br>UTF-8 是 Unicode 的实现方式之一）</p>
+<h4 id="UML-图有哪些？"><a href="#UML-图有哪些？" class="headerlink" title="UML 图有哪些？"></a>UML 图有哪些？</h4><p>UML常用九种图:<br>用例图、类图、对象图、活动图、状态图、序列图、协作图、构建图、部署图<br>UML类图关系（泛化、继承、实现、依赖、关联、聚会、组合）</p>
+<h4 id="开发中用到比较多的数据结构有哪些？"><a href="#开发中用到比较多的数据结构有哪些？" class="headerlink" title="开发中用到比较多的数据结构有哪些？"></a>开发中用到比较多的数据结构有哪些？</h4><p>继承自Collection和map两个主要接口的类</p>
 <ul>
-<li><p>新建线程<br>1、继承Thread，重写run方法。执行start()<br>2、 实现Runnable接口的，重写run方法，新建Thread执行start()<br>3、匿名类方式重写run方法</p>
-</li>
-<li><p>SQL的优化问题，怎么优化？<br>a、表的设计合理（符合3NF）<br>b、添加适当索引(index)[四种: 普通索引、主键索引、唯一索引、全文索引] 复合索引<br>c、分表技术(水平分割、垂直分割)<br>d、读写分离<br>e、存储过程 [模块化编程，可以提高技术，但是迁移性不好]<br>f、对mysql配置优化 [ 配置最大并发数,调整缓存大小]<br>g、mysql 服务器硬件升级<br>h、定时的去清除不需要的数据, 定时进行碎片整理(MyISAM)</p>
-</li>
-<li><p>OSI模型：<br>国际模型分为七层：<br>应用层、表示层、会话层、传输层、网络层、数据链路层、物理层<br>而实际应用为TCP/IP四层：<br>应用层、传输层、网络层、数据链路层<br>教科书为了方便，综合两者分成5层：<br>应用层、传输层、网络层、数据链路层、物理层。实际上三者是同一回事。</p>
-</li>
-<li><p>TCP跟UDP的区别是什么？<br>1、TCP是面向连接的，虽然说网络的不安全不稳定特性决定了多少次握手都不能保证连接的可靠性，但TCP的三次握手在最低限度上（实际上也很大程度上保证了）保证了连接的可靠性；<br>而UDP不是面向连接的，UDP传送数据前并不与对方建立连接，对接收到的数据也不发送确认信号，发送端不知道数据是否会正确接收，当然也不用重发，所以说UDP是无连接的、不可靠的一种数据传输协议。<br>2、也正由于1所说的特点，使得UDP的开销更小数据传输速率更高，因为不必进行收发数据的确认，所以UDP的实时性更好。</p>
-</li>
-<li><p>tcp 跟 ip 的区别？<br>tcp是在传输层，ip是在网络层</p>
-</li>
-<li><p>事务, 什么是事务, 为何用事务？<br>事务是一组不可再分割的操作集合，保证数据的一致性和完整性。<br>事务特征：一致性，持久性，隔离性，原子性</p>
-</li>
-<li><p>面向切面(AOP),原理是什么 ？<br>JDK动态代理 和 CGLIB动态代理（没有实现接口的情况下）</p>
-</li>
-<li><p>两个项目之间如何通信 ？<br>a、RPC（远程过程调用）1.Thrift 2.Dubbo 3.Spring Cloud (基于http restful 接口)<br>b、消息中间件，apache kafka、rabbitmq等</p>
-</li>
-<li><p>碰到乱码怎么解决,utf-8和gbk可以直接转换么？<br>比如，你从utf8格式的文件中使用gbk去读取一段字符，发现是乱码，那么你需要用重新使用gbk编码，再使用utf8读取。<br>（扩展：unicode 是字符集，一个编号(数字)到字符的一种映射关系，<br>UTF-8 是 Unicode 的实现方式之一）</p>
-</li>
-<li><p>UML 图有哪些？<br>UML常用九种图:<br>用例图、类图、对象图、活动图、状态图、序列图、协作图、构建图、部署图<br>UML类图关系（泛化、继承、实现、依赖、关联、聚会、组合）</p>
-</li>
+<li>几个常用类的区别<br>1．ArrayList: 元素单个，效率高，多用于查询<br>2．Vector: 元素单个，线程安全，多用于查询<br>3．LinkedList:元素单个，多用于插入和删除<br>4．HashMap: 元素成对，元素可为空<br>5．HashTable: 元素成对，线程安全，元素不可为空 </li>
+<li>Vector、ArrayList和LinkedList<br>大多数情况下，从性能上来说ArrayList最好，但是当集合内的元素需要频繁插入、删除时LinkedList会有比较好的表现，但是它们三个性能都比不上数组，另外Vector是线程同步的。所以：<br>如果能用数组的时候(元素类型固定，数组长度固定)，请尽量使用数组来代替List；<br>如果没有频繁的删除插入操作，又不用考虑多线程问题，优先选择ArrayList；<br>如果在多线程条件下使用，可以考虑Vector；<br>如果需要频繁地删除插入，LinkedList就有了用武之地；<br>如果你什么都不知道，用ArrayList没错。 </li>
+<li>Collections和Arrays<br>在 Java集合类框架里有两个类叫做Collections（注意，不是Collection！）和Arrays，这是JCF里面功能强大的工具，但初学者往往会忽视。按JCF文档的说法，这两个类提供了封装器实现（Wrapper Implementations）、数据结构算法和数组相关的应用。</li>
 </ul>
+<h4 id="谈谈你对HashMap的理解，底层基本实现。HashMap怎么解决碰撞问题"><a href="#谈谈你对HashMap的理解，底层基本实现。HashMap怎么解决碰撞问题" class="headerlink" title="谈谈你对HashMap的理解，底层基本实现。HashMap怎么解决碰撞问题?"></a>谈谈你对HashMap的理解，底层基本实现。HashMap怎么解决碰撞问题?</h4><p>HashMap底层是 数组+链表+红黑数；<br>链地址法，HashMap使用链表来解决碰撞问题，当碰撞发生了，对象将会存储在链表的下一个节点中。</p>
+<!--more-->
+<h4 id="简单说说类加载过程，里面执行了什么操作？"><a href="#简单说说类加载过程，里面执行了什么操作？" class="headerlink" title="简单说说类加载过程，里面执行了什么操作？"></a>简单说说类加载过程，里面执行了什么操作？</h4><p>类加载是指JVM虚拟机把.class文件中类信息加载进内存，并进行解析生成对应的class对象的过程。<br>这个过程包括 加载、验证、准备、解析、初始化。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> public class ClassLoadTest &#123;</span><br><span class="line">    private static ClassLoadTest test = new ClassLoadTest();</span><br><span class="line">    static int x;</span><br><span class="line">    static int y = 0;</span><br><span class="line">    public ClassLoadTest() &#123;</span><br><span class="line">            x++;</span><br><span class="line">            y++;</span><br><span class="line">    &#125;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        System.out.println(test.x);</span><br><span class="line">        System.out.println(test.y);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//输出  1 0</span><br></pre></td></tr></table></figure>
+<h4 id="http协议，get-post的基本区别"><a href="#http协议，get-post的基本区别" class="headerlink" title="http协议，get/post的基本区别"></a>http协议，get/post的基本区别</h4><p>get/post HTTP协议中的两种发送请求的方法;<br>(1)对参数的数据类型，GET只接受ASCII字符，而POST没有限制，允许二进制。<br>(2)GET在浏览器回退/刷新时是无害的，而POST会再次提交请求。<br>(3)GET请求只能进行url编码(application/x-www-form-urlencoded)，而POST支持多种编码方式(application/x-www-form-urlencoded 或 multipart/form-data)，可以为二进制使用多重编码。<br>(4)POST 比 GET 更安全，因为GET参数直接暴露在URL上，POST参数在HTTP消息主体中，而且不会被保存在浏览器历史或 web 服务器日志中。<br>(5)对参数数据长度的限制，GET方法URL的长度是受限制的，最大是2048个字符，POST参数数据是没有限制的。<br>(6)GET请求会被浏览器主动缓存，POST不会，除非手动设置。<br>(7)GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。<br>(8)GET请求可被收藏为书签，POST不能</p>
+<h4 id="mysql存储引擎有哪些？悲观锁和乐观锁使用场景。"><a href="#mysql存储引擎有哪些？悲观锁和乐观锁使用场景。" class="headerlink" title="mysql存储引擎有哪些？悲观锁和乐观锁使用场景。"></a>mysql存储引擎有哪些？悲观锁和乐观锁使用场景。</h4><p>存储引擎主要有： 1. MyIsam  2. InnoDB 3. Memory 4. Blackhole 5. CSV 6. Performance_Schema  7. Archive 8. Federated  9 Mrg_Myisam<br>一般使用MyIsam 和InnoDB；<br>读取频繁使用乐观锁，写入频繁使用悲观锁</p>
+<h4 id="springmvc-实现原理。"><a href="#springmvc-实现原理。" class="headerlink" title="springmvc 实现原理。"></a>springmvc 实现原理。</h4><p>1、客户端请求发送到Spring控制器（Dispatch Servlet）<br>2、查找路由表（Handler Mapping），然后分发请求（Controller）<br>3、等待返回结果（ModelAndView）<br>4、然后渲视图（ViewResolver），拼接页面（View）返回</p>
 
       
     </div>
@@ -552,6 +562,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"><i class="fa fa-tag"></i> java</a>
+          
+        </div>
       
 
       
@@ -618,8 +634,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -636,7 +661,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">34</span>
+                    <span class="site-state-item-count">33</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -727,6 +752,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#规则的二维数组int-t-，写一个方法实现行变成列，列变成行。"><span class="nav-number">1.</span> <span class="nav-text">规则的二维数组int[][] t ，写一个方法实现行变成列，列变成行。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#forward和redirect的区别"><span class="nav-number">2.</span> <span class="nav-text">forward和redirect的区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Interger-的值问题"><span class="nav-number">3.</span> <span class="nav-text">Interger 的值问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Java中Vector和ArrayList的区别"><span class="nav-number">4.</span> <span class="nav-text">Java中Vector和ArrayList的区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建线程"><span class="nav-number">5.</span> <span class="nav-text">新建线程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SQL的优化问题，怎么优化？"><span class="nav-number">6.</span> <span class="nav-text">SQL的优化问题，怎么优化？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#OSI模型："><span class="nav-number">7.</span> <span class="nav-text">OSI模型：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#TCP跟UDP的区别是什么？"><span class="nav-number">8.</span> <span class="nav-text">TCP跟UDP的区别是什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tcp-跟-ip-的区别？"><span class="nav-number">9.</span> <span class="nav-text">tcp 跟 ip 的区别？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#事务-什么是事务-为何用事务？"><span class="nav-number">10.</span> <span class="nav-text">事务, 什么是事务, 为何用事务？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#面向切面-AOP-原理是什么-？"><span class="nav-number">11.</span> <span class="nav-text">面向切面(AOP),原理是什么 ？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#两个项目之间如何通信-？"><span class="nav-number">12.</span> <span class="nav-text">两个项目之间如何通信 ？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#碰到乱码怎么解决-utf-8和gbk可以直接转换么？"><span class="nav-number">13.</span> <span class="nav-text">碰到乱码怎么解决,utf-8和gbk可以直接转换么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UML-图有哪些？"><span class="nav-number">14.</span> <span class="nav-text">UML 图有哪些？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开发中用到比较多的数据结构有哪些？"><span class="nav-number">15.</span> <span class="nav-text">开发中用到比较多的数据结构有哪些？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#谈谈你对HashMap的理解，底层基本实现。HashMap怎么解决碰撞问题"><span class="nav-number">16.</span> <span class="nav-text">谈谈你对HashMap的理解，底层基本实现。HashMap怎么解决碰撞问题?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#简单说说类加载过程，里面执行了什么操作？"><span class="nav-number">17.</span> <span class="nav-text">简单说说类加载过程，里面执行了什么操作？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#http协议，get-post的基本区别"><span class="nav-number">18.</span> <span class="nav-text">http协议，get/post的基本区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql存储引擎有哪些？悲观锁和乐观锁使用场景。"><span class="nav-number">19.</span> <span class="nav-text">mysql存储引擎有哪些？悲观锁和乐观锁使用场景。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#springmvc-实现原理。"><span class="nav-number">20.</span> <span class="nav-text">springmvc 实现原理。</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -754,7 +795,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">214k</span>
+    <span title="站点总字数">216k</span>
   
 
   
@@ -765,7 +806,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">2:51</span>
+    <span title="站点阅读时长">2:53</span>
   
 </div>
 
