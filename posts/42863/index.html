@@ -137,7 +137,7 @@
 <meta property="og:site_name" content="Mr.冼 (ง •̀_•́)ง┻━┻">
 <meta property="og:description" content="知其然，不知其所以然">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-24T13:56:51.334Z">
+<meta property="og:updated_time" content="2019-03-26T04:28:19.662Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面试总结">
 <meta name="twitter:description" content="知其然，不知其所以然">
@@ -409,12 +409,24 @@
                 
               
 
-              <time title="创建时间：2019-03-24 13:48:54 / 修改时间：21:56:51" itemprop="dateCreated datePublished" datetime="2019-03-24T13:48:54+08:00">2019-03-24</time>
+              <time title="创建时间：2019-03-24 13:48:54" itemprop="dateCreated datePublished" datetime="2019-03-24T13:48:54+08:00">2019-03-24</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-26 12:28:19" itemprop="dateModified" datetime="2019-03-26T12:28:19+08:00">2019-03-26</time>
               
             
           </span>
@@ -480,7 +492,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">4.8k</span>
+                <span title="本文字数">5.7k</span>
               
 
               
@@ -494,7 +506,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">4 分钟</span>
+                <span title="阅读时长">5 分钟</span>
               
             </div>
           
@@ -545,6 +557,13 @@
 <h4 id="http协议，get-post的基本区别"><a href="#http协议，get-post的基本区别" class="headerlink" title="http协议，get/post的基本区别"></a>http协议，get/post的基本区别</h4><p>get/post HTTP协议中的两种发送请求的方法;<br>(1)对参数的数据类型，GET只接受ASCII字符，而POST没有限制，允许二进制。<br>(2)GET在浏览器回退/刷新时是无害的，而POST会再次提交请求。<br>(3)GET请求只能进行url编码(application/x-www-form-urlencoded)，而POST支持多种编码方式(application/x-www-form-urlencoded 或 multipart/form-data)，可以为二进制使用多重编码。<br>(4)POST 比 GET 更安全，因为GET参数直接暴露在URL上，POST参数在HTTP消息主体中，而且不会被保存在浏览器历史或 web 服务器日志中。<br>(5)对参数数据长度的限制，GET方法URL的长度是受限制的，最大是2048个字符，POST参数数据是没有限制的。<br>(6)GET请求会被浏览器主动缓存，POST不会，除非手动设置。<br>(7)GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。<br>(8)GET请求可被收藏为书签，POST不能</p>
 <h4 id="mysql存储引擎有哪些？悲观锁和乐观锁使用场景。"><a href="#mysql存储引擎有哪些？悲观锁和乐观锁使用场景。" class="headerlink" title="mysql存储引擎有哪些？悲观锁和乐观锁使用场景。"></a>mysql存储引擎有哪些？悲观锁和乐观锁使用场景。</h4><p>存储引擎主要有： 1. MyIsam  2. InnoDB 3. Memory 4. Blackhole 5. CSV 6. Performance_Schema  7. Archive 8. Federated  9 Mrg_Myisam<br>一般使用MyIsam 和InnoDB；<br>读取频繁使用乐观锁，写入频繁使用悲观锁</p>
 <h4 id="springmvc-实现原理。"><a href="#springmvc-实现原理。" class="headerlink" title="springmvc 实现原理。"></a>springmvc 实现原理。</h4><p>1、客户端请求发送到Spring控制器（Dispatch Servlet）<br>2、查找路由表（Handler Mapping），然后分发请求（Controller）<br>3、等待返回结果（ModelAndView）<br>4、然后渲视图（ViewResolver），拼接页面（View）返回</p>
+<h4 id="为管理岗位业务培训信息，简历了3张表"><a href="#为管理岗位业务培训信息，简历了3张表" class="headerlink" title="为管理岗位业务培训信息，简历了3张表"></a>为管理岗位业务培训信息，简历了3张表</h4><p>S(SID,SN,SD,SA) 学号 名字 单位 年龄<br>C(CID,CN) 课程编号  课程名称<br>SC(SID,CID,G) 学号  课程编号 学习成绩</p>
+<p>1.使用标准SQL嵌套语句查询选修课程名称为“基础税收”的学员的 学号跟名字<br><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> SC.SID</span><br><span class="line"><span class="keyword">from</span> SC</span><br><span class="line"><span class="keyword">where</span> </span><br><span class="line">  SC.CID=(</span><br><span class="line">      <span class="keyword">select</span> C.CID</span><br><span class="line">      <span class="keyword">from</span> C</span><br><span class="line">      <span class="keyword">where</span></span><br><span class="line">      C.CN = <span class="string">'税收基础'</span></span><br><span class="line">  )</span><br></pre></td></tr></table></figure></p>
+<p>2.使用标准的SQL嵌套语句查询 不选择 课程编号为”C5”的学员名字和所属单位<br><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> S.SN,S.SD</span><br><span class="line"><span class="keyword">from</span> S</span><br><span class="line"><span class="keyword">where</span></span><br><span class="line">S.SID <span class="keyword">in</span> ( </span><br><span class="line">    <span class="keyword">select</span> SC.SID</span><br><span class="line">    <span class="keyword">from</span> SC</span><br><span class="line">    <span class="keyword">where</span> </span><br><span class="line">    SC.CID <span class="keyword">in</span> (</span><br><span class="line">        <span class="keyword">select</span> C.CID</span><br><span class="line">        <span class="keyword">from</span> C</span><br><span class="line">        <span class="keyword">where</span></span><br><span class="line">        C.CID != <span class="string">'C5'</span></span><br><span class="line">    )</span><br><span class="line">);</span><br></pre></td></tr></table></figure></p>
+<p>3.使用标准的SQL嵌套语句查询 选修全部课程的 学员的 姓名和所属单位</p>
+<p>4.查询选修了课程的学员人数</p>
+<p>5.查询选修课程5门以上的学员的 名字和所属单位</p>
+<h4 id="写一个冒泡排序算法"><a href="#写一个冒泡排序算法" class="headerlink" title="写一个冒泡排序算法"></a>写一个冒泡排序算法</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] bob(<span class="keyword">int</span>[] t)&#123;</span><br><span class="line">       <span class="keyword">int</span> length = t.length;</span><br><span class="line">       <span class="keyword">int</span> temp;</span><br><span class="line">       <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i&lt;length;i++)&#123;</span><br><span class="line">           <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; length-<span class="number">1</span>-i; j++) &#123;</span><br><span class="line">               <span class="keyword">if</span>(t[j] &gt; t[j+<span class="number">1</span>])&#123;</span><br><span class="line">                   temp = t[j+<span class="number">1</span>];</span><br><span class="line">                   t[j+<span class="number">1</span>] = t[j];</span><br><span class="line">                   t[j] = temp;</span><br><span class="line">               &#125;</span><br><span class="line"></span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> t;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -761,7 +780,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#规则的二维数组int-t-，写一个方法实现行变成列，列变成行。"><span class="nav-number">1.</span> <span class="nav-text">规则的二维数组int[][] t ，写一个方法实现行变成列，列变成行。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#forward和redirect的区别"><span class="nav-number">2.</span> <span class="nav-text">forward和redirect的区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Interger-的值问题"><span class="nav-number">3.</span> <span class="nav-text">Interger 的值问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Java中Vector和ArrayList的区别"><span class="nav-number">4.</span> <span class="nav-text">Java中Vector和ArrayList的区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建线程"><span class="nav-number">5.</span> <span class="nav-text">新建线程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SQL的优化问题，怎么优化？"><span class="nav-number">6.</span> <span class="nav-text">SQL的优化问题，怎么优化？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#OSI模型："><span class="nav-number">7.</span> <span class="nav-text">OSI模型：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#TCP跟UDP的区别是什么？"><span class="nav-number">8.</span> <span class="nav-text">TCP跟UDP的区别是什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tcp-跟-ip-的区别？"><span class="nav-number">9.</span> <span class="nav-text">tcp 跟 ip 的区别？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#事务-什么是事务-为何用事务？"><span class="nav-number">10.</span> <span class="nav-text">事务, 什么是事务, 为何用事务？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#面向切面-AOP-原理是什么-？"><span class="nav-number">11.</span> <span class="nav-text">面向切面(AOP),原理是什么 ？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#两个项目之间如何通信-？"><span class="nav-number">12.</span> <span class="nav-text">两个项目之间如何通信 ？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#碰到乱码怎么解决-utf-8和gbk可以直接转换么？"><span class="nav-number">13.</span> <span class="nav-text">碰到乱码怎么解决,utf-8和gbk可以直接转换么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UML-图有哪些？"><span class="nav-number">14.</span> <span class="nav-text">UML 图有哪些？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开发中用到比较多的数据结构有哪些？"><span class="nav-number">15.</span> <span class="nav-text">开发中用到比较多的数据结构有哪些？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#谈谈你对HashMap的理解，底层基本实现。HashMap怎么解决碰撞问题"><span class="nav-number">16.</span> <span class="nav-text">谈谈你对HashMap的理解，底层基本实现。HashMap怎么解决碰撞问题?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#简单说说类加载过程，里面执行了什么操作？"><span class="nav-number">17.</span> <span class="nav-text">简单说说类加载过程，里面执行了什么操作？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#http协议，get-post的基本区别"><span class="nav-number">18.</span> <span class="nav-text">http协议，get/post的基本区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql存储引擎有哪些？悲观锁和乐观锁使用场景。"><span class="nav-number">19.</span> <span class="nav-text">mysql存储引擎有哪些？悲观锁和乐观锁使用场景。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#springmvc-实现原理。"><span class="nav-number">20.</span> <span class="nav-text">springmvc 实现原理。</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#规则的二维数组int-t-，写一个方法实现行变成列，列变成行。"><span class="nav-number">1.</span> <span class="nav-text">规则的二维数组int[][] t ，写一个方法实现行变成列，列变成行。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#forward和redirect的区别"><span class="nav-number">2.</span> <span class="nav-text">forward和redirect的区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Interger-的值问题"><span class="nav-number">3.</span> <span class="nav-text">Interger 的值问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Java中Vector和ArrayList的区别"><span class="nav-number">4.</span> <span class="nav-text">Java中Vector和ArrayList的区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建线程"><span class="nav-number">5.</span> <span class="nav-text">新建线程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SQL的优化问题，怎么优化？"><span class="nav-number">6.</span> <span class="nav-text">SQL的优化问题，怎么优化？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#OSI模型："><span class="nav-number">7.</span> <span class="nav-text">OSI模型：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#TCP跟UDP的区别是什么？"><span class="nav-number">8.</span> <span class="nav-text">TCP跟UDP的区别是什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tcp-跟-ip-的区别？"><span class="nav-number">9.</span> <span class="nav-text">tcp 跟 ip 的区别？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#事务-什么是事务-为何用事务？"><span class="nav-number">10.</span> <span class="nav-text">事务, 什么是事务, 为何用事务？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#面向切面-AOP-原理是什么-？"><span class="nav-number">11.</span> <span class="nav-text">面向切面(AOP),原理是什么 ？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#两个项目之间如何通信-？"><span class="nav-number">12.</span> <span class="nav-text">两个项目之间如何通信 ？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#碰到乱码怎么解决-utf-8和gbk可以直接转换么？"><span class="nav-number">13.</span> <span class="nav-text">碰到乱码怎么解决,utf-8和gbk可以直接转换么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UML-图有哪些？"><span class="nav-number">14.</span> <span class="nav-text">UML 图有哪些？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开发中用到比较多的数据结构有哪些？"><span class="nav-number">15.</span> <span class="nav-text">开发中用到比较多的数据结构有哪些？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#谈谈你对HashMap的理解，底层基本实现。HashMap怎么解决碰撞问题"><span class="nav-number">16.</span> <span class="nav-text">谈谈你对HashMap的理解，底层基本实现。HashMap怎么解决碰撞问题?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#简单说说类加载过程，里面执行了什么操作？"><span class="nav-number">17.</span> <span class="nav-text">简单说说类加载过程，里面执行了什么操作？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#http协议，get-post的基本区别"><span class="nav-number">18.</span> <span class="nav-text">http协议，get/post的基本区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mysql存储引擎有哪些？悲观锁和乐观锁使用场景。"><span class="nav-number">19.</span> <span class="nav-text">mysql存储引擎有哪些？悲观锁和乐观锁使用场景。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#springmvc-实现原理。"><span class="nav-number">20.</span> <span class="nav-text">springmvc 实现原理。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#为管理岗位业务培训信息，简历了3张表"><span class="nav-number">21.</span> <span class="nav-text">为管理岗位业务培训信息，简历了3张表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#写一个冒泡排序算法"><span class="nav-number">22.</span> <span class="nav-text">写一个冒泡排序算法</span></a></li></ol></div>
             
 
           </div>
@@ -795,7 +814,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">216k</span>
+    <span title="站点总字数">217k</span>
   
 
   
