@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[idea常用快捷键]]></title>
+    <url>%2Fposts%2F59244%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[idea常用快捷键]]></title>
+    <url>%2Fposts%2F59245%2F</url>
+    <content type="text"><![CDATA[Ctrl + Y ：删除当前行 Ctrl + N ： 查找类文件 Ctrl + D ：复制当前行到下一行 Ctrl + W ：选择一个单位 Ctrl + E ： 打开最近的文件 Ctrl + Shift + E ：打开最近编辑过的文件 Ctrl + F12 ： 文档大纲 Ctrl + H ： 查看当前类的继承关系 Ctrl + Q ： 查看说明文档 Ctrl + Alt + L 格式化代码 Ctrl + Shift + I 查看类体或者方法体 Ctrl + Alt + O 自动导包 Shift + Enter 在当前行下面开启新的一行 Alt + Shift + 上下箭头 ：移动行 Alt+F7 : 查看方法被调用 Shift + F11 ：查看书签]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[继承Thread 类和实现Runnable 接口的区别]]></title>
     <url>%2Fposts%2F14785%2F</url>
-    <content type="text"><![CDATA[Java中我们实现多线程常用的方法有两种，继承Thread类的方式跟实现Runnable接口的方式。一般首要选择使用实现Runnable接口的方式，主要原因有以下两点：— 1、java只能单继承，如果采用Thread的方式，以后代码要重构的时候可能会遇到问题，因为它不能再继承其他类了。— 2、使用Thread的方式不能实现资源共享。使用Runnable的方式很容易实现资源共享。 package MyJava;/** * TT */public class TT extends Thread &#123; private int count = 5; private String name; public TT(String name) &#123; this.name = name; &#125; @Override public void run() &#123; for (int i = 0; i &lt; 5; i++) &#123; System.out.println("当前运行线程：" + this.name + " -- count-- " + count--); try &#123; sleep((int) Math.random() * 10); &#125; catch (InterruptedException e) &#123; e.printStackTrace(); &#125; &#125; &#125; &#125; package MyJava;/** * test */public class test &#123; public static void main(String[] args) &#123; TT t1 = new TT("A"); TT t2 = new TT("B"); t1.start(); t2.start(); &#125;&#125; 输出:当前运行线程：A -- count-- 5当前运行线程：B -- count-- 5当前运行线程：A -- count-- 4当前运行线程：B -- count-- 4当前运行线程：B -- count-- 3当前运行线程：A -- count-- 3当前运行线程：A -- count-- 2当前运行线程：A -- count-- 1当前运行线程：B -- count-- 2当前运行线程：B -- count-- 1 分析： 线程1和线程2之间的变量是不能共享的，每次count–都有各自的变量和结果 package MyJava;/** * RunnableImpl */public class RunnableImpl implements Runnable &#123; private int count = 15; @Override public void run() &#123; for (int i = 0; i &lt; 5; i++) &#123; System.out.println(Thread.currentThread().getName() + "运行 count = " + count--); try &#123; Thread.sleep((int) Math.random() * 10); &#125; catch (InterruptedException e) &#123; e.printStackTrace(); &#125; &#125; &#125; &#125; package MyJava;/** * test */public class test &#123; public static void main (String[] args) throws InterruptedException &#123; Runnable R = new RunnableImpl(); Thread tt1 = new Thread(R,"A"); Thread tt2 = new Thread(R,"B"); Thread tt3 = new Thread(R,"C"); tt1.start(); tt2.start(); tt3.start(); &#125;&#125; 输出： A运行 count = 15C运行 count = 13B运行 count = 14C运行 count = 12B运行 count = 10A运行 count = 11A运行 count = 7B运行 count = 8C运行 count = 9B运行 count = 5A运行 count = 6B运行 count = 3C运行 count = 4A运行 count = 2C运行 count = 1 分析： 三个不同的线程之间的变量是共享的，每次count–得到的记过都是再上一个线程运行结果之上得到的]]></content>
+    <content type="text"><![CDATA[Java中我们实现多线程常用的方法有两种，继承Thread类的方式跟实现Runnable接口的方式。一般首要选择使用实现Runnable接口的方式，主要原因有以下两点：1、java只能单继承，如果采用Thread的方式，以后代码要重构的时候可能会遇到问题，因为它不能再继承其他类了。2、使用Thread的方式不能实现资源共享。使用Runnable的方式很容易实现资源共享。 package MyJava;/** * TT */public class TT extends Thread &#123; private int count = 5; private String name; public TT(String name) &#123; this.name = name; &#125; @Override public void run() &#123; for (int i = 0; i &lt; 5; i++) &#123; System.out.println("当前运行线程：" + this.name + " -- count-- " + count--); try &#123; sleep((int) Math.random() * 10); &#125; catch (InterruptedException e) &#123; e.printStackTrace(); &#125; &#125; &#125; &#125; package MyJava;/** * test */public class test &#123; public static void main(String[] args) &#123; TT t1 = new TT("A"); TT t2 = new TT("B"); t1.start(); t2.start(); &#125;&#125; 输出:当前运行线程：A -- count-- 5当前运行线程：B -- count-- 5当前运行线程：A -- count-- 4当前运行线程：B -- count-- 4当前运行线程：B -- count-- 3当前运行线程：A -- count-- 3当前运行线程：A -- count-- 2当前运行线程：A -- count-- 1当前运行线程：B -- count-- 2当前运行线程：B -- count-- 1 分析： 线程1和线程2之间的变量是不能共享的，每次count–都有各自的变量和结果 package MyJava;/** * RunnableImpl */public class RunnableImpl implements Runnable &#123; private int count = 15; @Override public void run() &#123; for (int i = 0; i &lt; 5; i++) &#123; System.out.println(Thread.currentThread().getName() + "运行 count = " + count--); try &#123; Thread.sleep((int) Math.random() * 10); &#125; catch (InterruptedException e) &#123; e.printStackTrace(); &#125; &#125; &#125; &#125; package MyJava;/** * test */public class test &#123; public static void main (String[] args) throws InterruptedException &#123; Runnable R = new RunnableImpl(); Thread tt1 = new Thread(R,"A"); Thread tt2 = new Thread(R,"B"); Thread tt3 = new Thread(R,"C"); tt1.start(); tt2.start(); tt3.start(); &#125;&#125; 输出： A运行 count = 15C运行 count = 13B运行 count = 14C运行 count = 12B运行 count = 10A运行 count = 11A运行 count = 7B运行 count = 8C运行 count = 9B运行 count = 5A运行 count = 6B运行 count = 3C运行 count = 4A运行 count = 2C运行 count = 1 分析： 三个不同的线程之间的变量是共享的，每次count–得到的记过都是再上一个线程运行结果之上得到的]]></content>
       <categories>
         <category>java</category>
       </categories>
@@ -258,7 +274,7 @@
   <entry>
     <title><![CDATA[夜空中最亮的星]]></title>
     <url>%2Fposts%2F22781%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-miELrtFc"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-KXYNFtjt"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
       <categories>
         <category>music</category>
       </categories>
