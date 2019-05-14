@@ -2,11 +2,6 @@
 <search>
   <entry>
     <title><![CDATA[idea常用快捷键]]></title>
-    <url>%2Fposts%2F59244%2F</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[idea常用快捷键]]></title>
     <url>%2Fposts%2F59245%2F</url>
     <content type="text"><![CDATA[Ctrl + Y ：删除当前行 Ctrl + N ： 查找类文件 Ctrl + D ：复制当前行到下一行 Ctrl + W ：选择一个单位 Ctrl + E ： 打开最近的文件 Ctrl + Shift + E ：打开最近编辑过的文件 Ctrl + F12 ： 文档大纲 Ctrl + H ： 查看当前类的继承关系 Ctrl + Q ： 查看说明文档 Ctrl + Alt + L 格式化代码 Ctrl + Shift + I 查看类体或者方法体 Ctrl + Alt + O 自动导包 Shift + Enter 在当前行下面开启新的一行 Alt + Shift + 上下箭头 ：移动行 Alt+F7 : 查看方法被调用 Shift + F11 ：查看书签]]></content>
       <categories>
@@ -274,7 +269,7 @@
   <entry>
     <title><![CDATA[夜空中最亮的星]]></title>
     <url>%2Fposts%2F22781%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-KXYNFtjt"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-GKbywhJG"), narrow: false, autoplay: false, showlrc: false, music: { title: "夜空中最亮的星", author: "逃跑计划", url: "http://phhpvehb1.bkt.clouddn.com/nightstart.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
       <categories>
         <category>music</category>
       </categories>
