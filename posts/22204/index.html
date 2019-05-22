@@ -129,21 +129,25 @@
 
 
 
-  <meta property="og:type" content="article">
-<meta property="og:title" content="idea常用快捷键">
-<meta property="og:url" content="http://yoursite.com/posts/59244/index.html">
+  <meta name="description" content="java泛型方法在重载时有个问题：不能定义具有相同集合类型参数的重载方法，例如:void method(List&amp;lt;Object&amp;gt; list) &amp;#123;    System.out.println(&quot;List&amp;lt;Object&amp;gt;&quot;);&amp;#125;void method(List&amp;lt;String&amp;gt; list) &amp;#123;    System.out.println(">
+<meta name="keywords" content="java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="当泛型遇上重载">
+<meta property="og:url" content="http://yoursite.com/posts/22204/index.html">
 <meta property="og:site_name" content="Mr.冼 (ง •̀_•́)ง┻━┻">
+<meta property="og:description" content="java泛型方法在重载时有个问题：不能定义具有相同集合类型参数的重载方法，例如:void method(List&amp;lt;Object&amp;gt; list) &amp;#123;    System.out.println(&quot;List&amp;lt;Object&amp;gt;&quot;);&amp;#125;void method(List&amp;lt;String&amp;gt; list) &amp;#123;    System.out.println(">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-14T00:52:42.703Z">
+<meta property="og:updated_time" content="2019-05-22T03:58:15.603Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="idea常用快捷键">
+<meta name="twitter:title" content="当泛型遇上重载">
+<meta name="twitter:description" content="java泛型方法在重载时有个问题：不能定义具有相同集合类型参数的重载方法，例如:void method(List&amp;lt;Object&amp;gt; list) &amp;#123;    System.out.println(&quot;List&amp;lt;Object&amp;gt;&quot;);&amp;#125;void method(List&amp;lt;String&amp;gt; list) &amp;#123;    System.out.println(">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/posts/59244/">
+  <link rel="canonical" href="http://yoursite.com/posts/22204/">
 
 
 
@@ -153,7 +157,7 @@
   };
 </script>
 
-  <title>idea常用快捷键 | Mr.冼 (ง •̀_•́)ง┻━┻</title>
+  <title>当泛型遇上重载 | Mr.冼 (ง •̀_•́)ง┻━┻</title>
   
 
 
@@ -363,7 +367,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/59244/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/22204/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xianJieHao">
@@ -380,7 +384,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">idea常用快捷键
+          <h1 class="post-title" itemprop="name headline">当泛型遇上重载
               
             
           </h1>
@@ -405,12 +409,34 @@
                 
               
 
-              <time title="创建时间：2019-05-14 08:52:42" itemprop="dateCreated datePublished" datetime="2019-05-14T08:52:42+08:00">2019-05-14</time>
+              <time title="创建时间：2019-05-22 11:56:10 / 修改时间：11:58:15" itemprop="dateCreated datePublished" datetime="2019-05-22T11:56:10+08:00">2019-05-22</time>
             
 
+            
+              
+
+              
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -420,8 +446,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/posts/59244/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/posts/59244/" itemprop="commentCount"></span>
+                <a href="/posts/22204/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/posts/22204/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -429,7 +455,7 @@
 
           
           
-             <span id="/posts/59244/" class="leancloud_visitors" data-flag-title="idea常用快捷键">
+             <span id="/posts/22204/" class="leancloud_visitors" data-flag-title="当泛型遇上重载">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -454,7 +480,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">0</span>
+                <span title="本文字数">524</span>
               
 
               
@@ -488,7 +514,11 @@
       
 
       
-        
+        <p>java泛型方法在重载时有个问题：不能定义具有相同集合类型参数的重载方法，例如:<br><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">method</span><span class="params">(List&lt;Object&gt; list)</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"List&lt;Object&gt;"</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">method</span><span class="params">(List&lt;String&gt; list)</span> </span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"List&lt;String&gt;"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在同一个类里这两个方法是不能同时存在的。这是为何？按理说List<string>类型并不是List<object>类型的子类(即使是子类，也可以定义重载方法), 也就是说它们属于不同的类型，为啥不能重载？原因在于java的泛型实际上并不是真正的泛型，它只是在编译的时候的一些限制，用于保证不会出现运行时潜在的类型转换错误，编译之后的class中并没有泛型，也就是说运行时不存在泛型一说，List<string>与List<object>编译之后都是List类型，已经丢失了泛型信息，这称为 “类型擦除” 所以以上两个方法最后都变成了</object></string></object></string></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">method</span><span class="params">(List list)</span> </span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这样这两个方法就没有任何区别了，因此不能重载。</p>
+
       
     </div>
 
@@ -505,6 +535,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"><i class="fa fa-tag"></i> java</a>
+          
+        </div>
       
 
       
@@ -524,6 +560,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/18581/" rel="prev" title="构建树方法">
+                构建树方法 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -589,7 +629,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">39</span>
+                    <span class="site-state-item-count">40</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -707,7 +747,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">228k</span>
+    <span title="站点总字数">234k</span>
   
 
   
@@ -718,7 +758,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">3:02</span>
+    <span title="站点阅读时长">3:07</span>
   
 </div>
 
